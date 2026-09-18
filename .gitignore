@@ -1,0 +1,38 @@
+# Ren'Py generated data
+cache/
+game/cache/
+saves/
+game/saves/
+
+# Ren'Py compiled scripts
+*.rpyc
+*.rpymc
+*.rpa
+
+# Logs and crash reports
+log.txt
+errors.txt
+traceback.txt
+files.txt
+
+# Generated builds and distributions
+build/
+dist/
+*.zip
+
+# Python-generated files
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Optional local backup files
+*.bak
+*.tmp
+*~
