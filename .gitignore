@@ -36,3 +36,19 @@ desktop.ini
 *.bak
 *.tmp
 *~
+# Ren'Py generated files
+game/cache/
+game/saves/
+*.rpyc
+*.rpymc
+
+# Exported builds
+build/
+dist/
+*.zip
+*.exe
+
+# Logs
+log.txt
+errors.txt
+traceback.txt
