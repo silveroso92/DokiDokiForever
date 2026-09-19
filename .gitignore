@@ -3,7 +3,7 @@ cache/
 game/cache/
 saves/
 game/saves/
-
+.vscode/
 # Ren'Py compiled scripts
 *.rpyc
 *.rpymc
