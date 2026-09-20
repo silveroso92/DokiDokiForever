@@ -451,120 +451,97 @@ show sayori rup lup e4b b1a mo
 show monika lsur oe om
 show sayori rdown neut cm oe
 m "Oh, sorry. We didn't mean to presume."
-
+show monika cm
 "Sayori looks at Monika and back at me."
-
+show sayori om
 s "Oh! Right. Uh, I didn't mean join the club, but join us during club."
-
+show sayori shoc om ce
+show monika happ
 s "That's not to say you can't join if you want to. I wouldn't be doing my job if I just shooed off potential members."
-
+show sayori happ cm oe
 mc "Your job?"
-
+show sayori om
 s "Yep! You're looking at THE vice president of the literature club!"
-
+show sayori ce cm
 "Sayori says this with her chin up and head high, reveling in her title."
-
 mc "..."
-
 s "..."
-
 "I look apathetically towards Monika."
-
+show monika forward neut oe cm
 mc "...She was the first one to join you wasn't she."
-
+show sayori rup lup vsur oe om
 s "Hey!"
-
+show monika forward rdown happ om oe
 m "Yeah, pretty much.."
-
+show monika cm
+show sayori ce om
 s "Monikaaa~"
-
-"Sayori begins to pout at the both of us."
-
+show sayori turned pout cm ce
+show monika lpoint om
 m "That said, I wouldn't have it any other way. Sayori is a great second in command."
-
 m "Her enthusiasm and sociability are a great asset. Not to mention her attentiveness to others."
-
-"Sayori begins to blush"
-
+show monika cm
+show sayori turned neut rup lup n3 ma e4b
 mc "Now that you mention it, I can see that. "
-
 mc "And thinking back on it, she was always writing stories. So an interest in literature is right up her alley."
-
+show sayori laugh n3 om oe
 s "Aww, you guys..."
-
+show monika ldown rdown happ om oe
+show sayori turned rdown ldown happ cm oe
 m "Well, we should get going. Don't want to keep the others waiting."
-
+show monika cm
+show sayori om
 s "Oh. Right! So, are you okay to join us?"
-
+show sayori cm
 "I look at Sayori as she pleads with me to join them."
-
 "I mean, I'm not against joining them, but between the homework and the breakup I don't think I have the energy for this right now."
-
 "I glance at Monika and try to form the words for an excuse, but the look on her face..."
-
 " I can't tell if it's intimidation, infatuation, or entrancement, but just meeting her eyes makes my words fall to the wayside."
-
 "I sigh."
-
 mc "I don't see the harm in checking out the club."
-
-"Sayori and Monika both smile."
-
+show monika lean happ om ec
+show sayori turned happ ec om
+show monika oe om
 m "We'll make sure you won't be disappointed!"
 
 scene bg corridor
-
+with dissolve
 "As we approach the clubroom, I notice we are passing a familiar room."
-
 "The Art club's room."
-
 "As soon as we pass it, I hear the door open."
-
 "Oh, shit!"
-
 "What if it's Elsea?"
-
 "What will she think if she sees me with Monika and Sayori?"
-
 "What is she gonna say?"
-
 "What is she gonna DO??"
-
 "What would I do?"
-
 "I tense up as I look towards the opening door to find..."
-
+show wallace forward at t41
 "Wallace, heading out the other way."
-
+hide wallace
+with moveoutleft
 "I don't think he saw me."
-
 "Geez, why is this happening?"
-
 "My hands are shaking a bit from the panic attack I gave myself."
-
 "Fortunately for me, the girls have been chatting away in front of me."
-
+show monika forward lpoint rhip happ om oe at t11 
 m "Well, we're here!"
-
+show monika cm
 "Monika turns the handle of the door to what is pretty much a regular classroom."
 
 "She pulls the door open and lets Sayori and I enter first. She soon follows."
 
 scene bg club_day
-
-"As I walk in the room I take note of everyone in the room."
-
-"..."
-
+with wipe left
+"As I walk in, I quickly scan the room and notice something odd"
+show yuri turned neut mf e1d b1a at t44
 "There's only one person."
-
 "A fair skinned girl with long lavender hair engrossed in a book sitting in the front row."
-
-"Huh."
-
+"Can't say I expected more for a liturature club"
+hide yuri
 mc "So...is everyone else late as well."
-
-s "Nope! We're all here!"
+show sayori turned 
+s "Huh?"
 
 "Sayori's exclamation seemed to get the attention of the girl as she peeks up from her book towards us."
 
