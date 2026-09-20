@@ -340,27 +340,27 @@ show monika forward happ om oe
 m "Actually I'm no longer in debate."
 show monika oe cm
 mc "Really? I heard you were really good."
-
+show monika cm ce   
 "Monika gives a light smile."
-
+show monika neut mi e1a
 m "To be honest, it wasn't the debating, but the politics and drama. Too much gossip, spite, and tiptoeing around others."
-
+show monika happ om oe
 m "I needed a place where that wasn't much of a factor. A sort of safe haven for those who need an escape."
-
+show monika lpiont rhip happ om oe
 m "That's why I created my own club. The Literature Club!"
 
 m "There, the members are free to pursue their literary passions, no matter what they are."
-
+show monika ldown happ cm oe
 mc "Literature, huh? That sounds...uh"
-
+show monika om oe
 m "I know it may not sound like the most exciting thing, but I assure you, the concept of literature is quite vast."
-
+show monika cm oe
 "I try to think of what she can even mean, but it just sounds like a fancy book club."
 
 "Just then, Monika walks closer to me, almost like she was reading my mind"
-
+show monika lpoint oe om
 m "Actually, if you're not too busy, I'd like you to come visit and see what it's all about."
-
+show monika cm
 "Did..did Monika just invite me to her club?"
 
 "I mean, it's not like I'm doing anything else after school."
@@ -369,92 +369,87 @@ m "Actually, if you're not too busy, I'd like you to come visit and see what it'
 
 "But do I really want to join a Literature club?"
 
-mc "I'd love to.."
-
+mc "I'd love to..."
+show monika neut rdown ldown oe cm
 mc "But I was kinda trying to meet with someone"
 
 "Monika frowns."
-
+show monika mb e1a b1b
 m "Oh, that's too bad. Maybe we ca-"
-
+show monika forward ysur cm oe
 qu "HEY [player]!!!"
-
 "Monika is interrupted by the yelling down the hall"
-
 "I peek around her and see Sayori running towards me waving her arms to get my attention."
-
 "As I wave back, Monika turns around with a look of surprise."
-
 "Sayori is coming in at full speed, but begins to slow down until she comes to a stop a few feet away from us."
-
 "She begins hunching over, desperately trying to catch her breath."
-
+show monika neut cm oe at t21
+show sayori turned neut lup rup n2 mq e4c at t22
 "I look at her with a bit of embarrassment, but I can't tell if it's for her or for myself as others are starting to stare and talk."
-
 s "[player]..."
-
+show sayori turned pani cm ce
 "Sayori:*huff*"
-
+show sayori om
 s "I finally"
-
+show sayori cm
 s "*gasp*"
-
+show sayori om
 s "FOUND YOU!!"
-
+show monika rhip laug cm ce
+show sayori pani cm ce
 "Monika looks at both me and Sayori and starts giggling to herself."
-
+show monika neut mb e1a b1b
 m "It's okay, Sayori. I was able to ask him."
-
 m "Unfortunately, he said he's busy. We can just start the meeting as usual."
-
+show monika ma
 "Wait, we?"
-
 mc "Wait, what?"
-
+show sayori lsur oe cm
 "Sayori looks up at me as she finally catches her breath."
-
+show sayori neut n1 om oe
 s "I forgot to ask you this morning, but I was gonna invite you to the literature club."
-
+show monika forward neut oe cm
+show sayori curi om oe
 s "Wait...you two know each other?"
-
+show sayori worr oe cm
 "Sayori's demeanor changes as if she's a bit upset about this."
-
-m "Oh, yeah. I've seen him around. You know, a, well...friend of a...friend."
-
+show monika happ oe om
+m "Oh, yeah. I've seen him around." 
+show monika neut n2 mh e2b b1ashow sayori curi cm oe
+m "You know, a, well...friend of a...friend."
+show monika n1 md
 "That look and tone Monika just took tells me she's very aware of the breakup."
-
 "To be honest, I'd be more surprised if she didn't."
-
 "I look at Sayori as she looks between me, Monika, and the floor like she's piecing it together."
-
+show sayori lup sad oe cm
 "Aaand she just got it."
-
 "Great."
-
 "Now this is awkward."
-
 "Sayori decides to break the tension."
-
+show sayori nerv om oe
 s "S..so, what were you busy with [player]?"
-
+show sayori cm
 mc "Huh? Oh!"
-
 mc "To be honest, I was looking for you to see if you wanted to walk home together."
+show monika ysur oe cm
+show sayori ldown lsur oe cm
 
-"Both girls' eyes light up"
-
+show monika rdown curi cm oe
+show sayori turned curi om oe
 s "Wait. If you were wanting to walk home with me..."
-
+show monika om
+show sayori cm
 m "...and you won't be leaving until after literature club.."
-
+show monika happ cm oe
+show sayori rup lup e4b b1a mo
 s "THAT MEANS [player] CAN JOIN US!!"
-
-"Sayori begins jumping in excitement."
-
+show monika m ce om
+show sayori rup lup e4b b1a mo
+#"Sayori begins jumping in excitement effect
 " [player]: Wait, I-"
-
 "As I look at both of them and see the joy in their faces, I realize that just tagging along wouldn't be bad."
-
+show monika lsur oe om
+show sayori rdown neut cm oe
 m "Oh, sorry. We didn't mean to presume."
 
 "Sayori looks at Monika and back at me."

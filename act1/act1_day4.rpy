@@ -3,45 +3,25 @@
     "Thursday"
 
     scene bg courtyard
-
     "As I walk outside to eat my lunch, I reflect on how decent my day has been going so far."
-
     "I got to walk with Sayori this morning and she was more chipper than usual."
-
     "Though I should probably start calling her as soon as I'm up to make sure she's up in time."
-
     "The dummy would have been late if I didn't wake her up."
-
     "And even though I still have a backlog of work, I should be able to power through most of it over the weekends."
-
     "As I find a table outside to settle at, I unpack my lunch and begin to eat."
-
     "Crap."
-
     "Dropped my water bottle."
-
     "As I bend down under the table to pick it up, I hear a familiar voice."
-
     "...Elsea..."
-
     "I stay under the table, completely immobilized by anxiety."
-
     "I can feel my heart beating in my ear."
-
     "She's...laughing. And sounds happy."
-
     "I peek a bit and see the side of her face."
-
     "She looks like nothing happened."
-
     "And here I am, quivering from the presence of her."
-
     "Was I really that much of a boyfriend if she can just write me off after a week?"
-
     "..."
-
     "As I sit back in the chair I just stare at my food."
-
     "I don't even have an appetite anymore. I pack everything back and head back to class."
 
     scene bg class_day

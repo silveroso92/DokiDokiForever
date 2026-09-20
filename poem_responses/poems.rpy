@@ -88,6 +88,12 @@ style monika_text:
     color "#000"
     outlines []
 
+style mc_text:
+    font "gui/font/m1.ttf"
+    size 46
+    color "#000"
+    outlines []
+
 default poem_last_author = None
 
 # Depreciation Warning
