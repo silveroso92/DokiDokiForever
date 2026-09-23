@@ -540,214 +540,229 @@ show yuri turned neut mf e1d b1a at t44
 "Can't say I expected more for a liturature club"
 hide yuri
 mc "So...is everyone else late as well."
-show sayori turned 
+show sayori turned curr om oe at t11
 s "Huh?"
-
-"Sayori's exclamation seemed to get the attention of the girl as she peeks up from her book towards us."
-
+show sayori happ cm ce rup
+"We seemed to get the attention of the girl as she peeks up from her book towards us."
+show sayori at t41
+show yuri turned neut b1f e1d mj at t44
 "She shyly smiles as she puts her bookmark in place and places her book on the desk."
-
+show yuri ma e1a b1b
+hide yuri
+hide sayori 
+show monika forward lpoint happ om oe at t11
 m "Okay, everyone!"
-
 m "We have a guest joining us for today's meeting."
-
+show monika ldown rhip cm at t32
+show sayori happ cm oe at t31
+show yuri turned happ cm oe at t33
 "The purple haired girl gets up to introduce herself in a graceful way."
-
+show yuri lsur om oe
 qu "Welcome to our literature club. My name is Yuri. It is a pleasure to meet your acquaintance."
-
+show yuri cm at t11
+hide monika
+hide sayori
 "This girl is almost as tall as me and has such a graceful, mature demeanor. It's hard to believe she's still in high school"
-
 mc "Uh..Oh! Nice to meet you, Yuri. I'm-"
-
+show yuri mf e2d b3c 
 qu "A BOY??!"
-
+hide yuri
 "An oddly familiar shriek comes from the closet, scaring the crap out of me."
-
 "I get even more rattled when I see where that shriek came from."
-
+show natsuki turned lhip ff anno cm oe at t11
 "It's the same pink haired girl I ran into the last two days."
-
 "What luck."
-
+show natsuki om
 qu "I can't believe you went and invited a boy to-"
-
+show natsuki turned ldown ff lsur cm oe
 "She stares at me as I try to avert my eyes"
-
+show natsuki turned ff angr om oe
 qu "You..."
+show natsuki cm
 "There's an awkward silence as the pink haired girl stares me down as I continue to avoid making eye contact."
-
+show natsuki at t43
+show sayori turned curi cm oe at t41
 "I glance over at Sayori and she has a troubled look on her face."
-
+show yuri turned curi cm oe at t44
 "My eyes shift to Yuri, who looks like she is trying to piece together the situation."
-
+show monika forward ldown rhip curi cm oe at t42
 "My eyes finally land on Monika as she steps between us."
-
+show monika om
 m "I take it you two have a sort of history already."
-
-"The pink haired girl pouts and looks away as she crosses her arms."
-
+show monika cm
+show natsuki cross ff neut md e1b b1d
+show natsuki cross e1a mj
 mc "I..kinda bumped into her yesterday. And again, I'm so sorry if I hurt you."
-
+show natsuki cross fta
 "???:Pfft. Whatever. *Not like you really care.*"
-
+show monika forward neut n2 mb e1a b1b
 m "Heheh...looks like you're got a habit of running into club members it seems."
-
+show monika nerv n2 cm oe
 "Monika chuckles nervously as the tension continues to rise."
-
+show sayori laug cm oe
 "Sayori breaks the silence while grabbing my shoulders."
-
+show monika at t41
+show natsuki at t42
+show sayori rup laug om oe at t43
+show yuri ysur cm oe
 s "Better watch out Yuri, you're probably next. Heehee~"
-
+show sayori cm 
+show yuri worr lup cm oe
 "Yuri blushes and begins to fidget as she looks at me."
-
+show yuri om
 y "Oh, I don't think it was intentional. It was probably a coincidence."
-
+show yuri cm
+show sayori rup lup neut mo e1a b1d
 "Sayori gets a devilish grin on her face."
-
+show sayori lup rup neut b1d e1a mc
 s "I don't know, I've already had many times of [player] running into me."
-
+show sayori turned rup lup neut mo e1a b1d
+show yuri turned neut n4 mk e2b b1b
 "Yuri begins to get a panicked look as she slowly shuffles away from [player]."
-
+show sayori at t44
 "Sayori begins pushing me closer to Yuri."
-
+show yuri pani n4 om oe
 y "Eeep!!"
-
+show yuri neut n4 mk e2b b1b
 "The next thing I know, Sayori is right behind me with both hands on my back, pushing me towards Yuri."
-
 mc "Hey! What are you-"
-
+show sayori turned happ om oe
 s "We don't want Yuri to feel left out."
-
+show sayori cm
+show yuri sad om ce
 y "It's fine! I don't really need to-"
-
+show sayori turned happ om oe
 "Sayori : Come on,girls! Help me out!"
 
 mc "Sayori? What the hell?"
-
+show sayori happ om ce
 s "One of us! One of us!"
-
+show monika neut cm oe at t41
+show natsuki ff neut cm oe at t44
+show yuri sad n4 om oe at t11
+show sayori neut mo e4b b1a at t22
 "Natsuki and Monika just stare at us with blank faces, unsure of what they should even do."
 
 "I look at Yuri and she looks back in a bit of panic."
-
+hide monika
+hide sayori
+hide natsuki
+show yuri sad n4 om oe
 mc "Yuri. Could you please angle your shoulder towards me?"
-
+show yuri turned nerv cm oe
 y "Umm...okay.."
-
+show yuri neut mj e1b b1b
 "She sheepishly angles her shoulder towards me and I gently walk into it."
-
+show yuri neut e2a mf b1f
 mc "There. I technically bumped into her. Happy now?"
-
+show yuri shy neut cm oe at t22
+show sayori turned ldown rdown happ om ce at t22
 "Sayori : Good going Yuri! It wasn't so bad, was it?"
-
+show sayori cm at t41
+show yuri at t44
+show monika at t43 forward neut ma e1a b1b
 "Monika gently rubs Yuri's back as she begins to calm down."
-
+show yuri shy happ om oe
 "Yuri:N..no.. I..g..guess."
-
+show sayori rup lup happ om ce
+show monika forward happ cm oe
+show yuri cm
 s "Yay! Now the entire club has had [player] run into them!"
-
+show sayori cm
 mc "Wait, entire club? You mean.."
-
+show sayori rdown ldown om
 s "Yup! It's just us four."
-
+show sayori cm
+show monika lpoint happ om oe
 m "For now, at least. We plan on doing some more recruiting."
-
+show monika ldown cm
 "Huh. I don't recall seeing any posters promoting it."
-
 "Then again, this is a brand new club, so they're probably still getting a handle of things."
-
+show monika at t11
+hide yuri 
+hide sayori
 mc "So are there certain activities you all do here?"
-
+show monika happ om oe
 m "For now, we will occasionally have a group activity that we do such as collaborative writing and reading discussions."
-
+show monika lpoint rhip
 m "But seeing that we have a special guest, we will just let everyone do their usual activities."
-
 m "Though we plan on doing some writing exercises soon. I have a few that are said to help with writing essays."
-
+show monika cm ldown rdown
 "Help with writing? Huh. The essays for my classes are the most daunting at the moment."
-
-m "I know you said you were staying to walk Sayori home, but feel free to take a look around and see what everyone is up to here. If you need anything, I'll be in the front of the classroom."
-
+show monika om
+m "I know you said you were staying to walk Sayori home, but feel free to take a look around and see what everyone is up to here." 
+show monika lpoint
+m "If you need anything, I'll be in the front of the classroom."
+show monika ldown cm
 mc "Yeah. Sure thing."
-
+show monika forward happ cm ce
 "Monika smiles and then walks to the front at the teachers desk and begins typing on the computer."
-
+hide monika
 "She seemed so confident and passionate about their activities."
-
 "It was quite endearing to see"
-
 "I turn around and take stock of what the others were doing."
-
 "Sayori is at a desk scribbling something down on a piece of paper."
-
 "No doubt writing another one of her stories."
-
 " Yuri seems to have returned to the book she has previously been reading when we first arrived."
-
 "Though thanks to Sayori, she seems a bit shaken up and flustered."
-
 "And the one they called Natsuki seems to be rummaging around in the closet."
-
 "I don't really know what closet renovation has to do with literature, but I'm a bit too scared to bring that up with her."
-
 "I should ease my way into this by checking with Sayori."
-
 "She might be able to give some pointers on what to say and not say around the other two."
-
 "As I approach her, I start noticing the somber look on her face."
-
+show sayori turned dist cm oe at t11
 mc "Hey, Sayori. You okay?"
-
+show sayori neut ma e1a b1b
 "She looks up at him with a sad smile."
-
+show sayori mb
 s "I'm fine."
-
+show sayori ma
 "I sit down next to her, reluctant to take that at face value."
-
+show sayori mj
 mc "Look at Sayori. I know we kinda drifted apart while, you know..."
-
+show sayori e1g
 mc "But I can still tell when something's going on."
-
+show sayori e4a
 "Sayori wipes her eyes."
-
+show sayori turned worr om oe
 s "no, I really am happy that you're here. It's..."
-
+show sayori cm
 mc "It's..."
-
+show sayori turned sad om oe
 s "It's just that..I just realized how uncomfortable I made everyone."
-
+show sayori turned worr oe om
 s "I didn't mean to be mean. I was trying to get everyone to have fun."
-
+show sayori worr om ce
 s "I guess I didn't think enough and my airhead self just ruined it."
-
-"Sayori starts to lay her hand on her face and begins to crumble her paper."
-
+show sayori cm
+"Sayori starts to lay her head on the table and begins to crumble her paper."
 "I put my hand on hers to stop her before she can ball it up."
-
+show sayori sad cm oe
 mc "Sayori, there was nothing you could have done that would have made that situation LESS awkward."
-
+show sayori worr om oe
 s "You're just saying that."
-
+show sayori sad cm oe
 mc "No, it's true."
-
 mc "No one else knew what to do or say there to break the tension, but you did."
-
+show sayoir om
 s "..But Yuri-"
-
+show sayori cm
 mc "Is just fine. Look."
-
+hide sayori
+show yuri turned happ cm oe at t11
 "We both glance at Yuri, who is now back to a calm state, entranced in her novel."
-
+hide yuri
+show sayori dist cm oe at t11 
 mc "Because of you, I feel like I can actually approach her now and start a conversation. If anything, to apologize."
-
 s "Hrmm."
-
 "I then hear a thump coming from the closet."
-
+show sayori at t21
+show natsuki turned ff curi cm oe at t44
 "As I look in that direction, I notice Natsuki glance in our direction."
-
+show natsuki ff angr cm oe
 "As she notices Sayori's demeanor, she begins to walk firmly towards me."
-
+show natsuki turned ff lhip rhip angr cm oe at t22
+show sayori lsur cm oe
 n "Hey! What are you saying to her to make her so sad?"
 
 "She stands over me, attempting to make herself seem statuesque despite being barely taller even while I'm seated."

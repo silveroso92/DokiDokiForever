@@ -35,7 +35,7 @@
     scene bg class_day
     with fade
     "This day has been nothing but a drag."
-    "I look at the clock and see there's still 30 minutes left of class."
+    "I look at the clock and see there's still 5 minutes left of class."
     "I can't wait to get out of here."
     "Away from the looks, the whispers, the couples that serve as a reminder..."
     "I put my face in my hands and just pray that I'm ignored until the final bell."
