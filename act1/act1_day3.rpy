@@ -3,7 +3,9 @@
 
 "*RIINGG RIINGG RIINGG*"
 scene bg bedroom
+play sound "mod_assets/sfx/alarm_clock.ogg" loop
 "My phone begins to go off, waking me up."
+stop sound
 "I hit the snooze button and put it back down. 10 more minutes won't hurt."
 "As I'm trying to sleep I hear a faint noise."
 "It sounds like my phone is playing something, but I can't tell what."
