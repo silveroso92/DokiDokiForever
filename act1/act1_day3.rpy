@@ -764,275 +764,228 @@ show natsuki ff angr cm oe
 show natsuki turned ff lhip rhip angr cm oe at t22
 show sayori lsur cm oe
 n "Hey! What are you saying to her to make her so sad?"
-
+show natsuki ff lhip rhip angr cm oe
 "She stands over me, attempting to make herself seem statuesque despite being barely taller even while I'm seated."
-
+show sayori laug cm oe
 "Sayori then gets out of her seat to try and come between me and Natsuki."
-
+show sayori om
 s "No no no!"
-
 s "[player] didn't do anything. He was trying to cheer me up."
-
+show sayori nerv cm oe
+show natsuki ff doub om oe
 n "Well he's doing a crappy job of it."
-
+show natsuki cross ff doub cm oe
 n "Let me know when you want me to send him packing."
-
+show sayori neut n2 mb e1a b1b
+show natsuki cross ff doub cm oe
 s "Thanks, but I don't see that being necessary."
-
+show sayori neut n1 ma e1a b1b
+show natsuki ff dist om ce
 n "We'll see..."
-
+show sayori curi cm oe
+show natsuki turned anno cm oe
 "She stares me down as she walks backwards for a while."
-
+hide natsuki
+show sayori at t11
 "As soon as she's near the closest, she continues with what she was doing."
-
-"Sayori sits back down and sighs/"
-
+show sayori turned sad om ce
+"Sayori sits back down and sighs"
+show sayori oe
 mc "Uh, when did you get a bodyguard?"
-
+show sayori neut mb e1a b1b
 s "Oh, that's just how she is."
-
+show sayori happ om oe
 s "She can be a tough nut to crack, but she has a good heart."
-
-s "That's not the first time she's stood up for me either. She's snapped on a few girls who were teasing me before. The same for Yuri."
-
+show sayori lup
+s "That's not the first time she's stood up for me either." 
+s "She's snapped on a few girls who were teasing me before. The same for Yuri."
+show sayori cm
 "I then think about our first encounter."
-
 "According to Sayori, Natsuki's the type to stand up for others."
-
 "She probably sees me as a coward who would never do the same."
 
 "I grab Sayori's hand and she flinches a bit."
-
 mc "I'm sorry I haven't been there for you as I should have, but I'm glad someone else was."
-
+show sayori neut n3 ma e1b b1b
 "Sayori begins to blush."
-
+show sayori neut n3 mb e1b b1b
 s "Y..you don't have to apologize. You had a good reason-"
-
+show sayori turned sad cm oe
 mc "Not good enough to act the way I did. For either of you."
-
-"Sayori looks a little confused."
-
+show sayori curi cm oe
 mc "I think I can talk to Natsuki now. I wanna nip the in the bud. (What does that last sentence really say??)"
-
-"Sayori begins to smile."
-
+show happ cm oe
+show happ om oe
 s "I'm here for you if you need me. Go for it buddy!"
-
+show sayori cm
 "I nod my head and begin to walk over to the closet."
-
+show sayori rup lup happ om oe
 "I look back at Sayori and she's giving me two thumbs up with a smile that I can tell is genuine."
 
 scene bg closet
-
 "As I approach, my confidence begins to wane."
-
 "I can hear her disgruntled grumbling as she's digging through boxes."
-
 "I try to cough to softly get her attention."
-
+show natsuki turned ff vang cm oe at t11
 "She practically gives a high pitched yelp and drops her box."
-
-"That just proved that I failed in that soft aspect. Good job numbnuts."
-
+"Welp, there goes the gentle approach. Good job numbnuts."
+show natsuki ff vang cm oe
 "Books scatter in a pile all over the floor as the box falls, showing different types of books that seem to be manga."
-
+hide natsuki
 "I look across the room and Monika and Yuri look at us curiously while Sayori's thumbs up is turning down."
-
 "I turn around to check on Natsuki."
-
 mc "Are you alri-"
-
 "I am inches away from her first glare."
-
+show natsuki turned ff vang om oe
 n "Go. Away. Now!"
-
+show natsuki ce cm at t11
 mc "S..sorry I was just trying to-"
-
+show natsuki om
 n "You've already succeeded at making my day worse just by existing."
-
+show natsuki oe
 n "Now do what you're best at..."
-
+show natsuki neut mm e1g b1e
 n "...and pretend like you don't see me!"
-
+hide natsuki
 "She crouches down to begin picking up the scattered books."
-
 "Though she is facing away from me, I can hear a bit of a sniffle as I notice her wiping her face."
-
 "What is wrong with me?"
-
 "I was so far in my feelings that I just disregarded her hardships right in her face."
-
 "And to think, she was dealing with what I saw, but would still put herself out there for her friends."
-
 "I begin to start picking up some of the books that are scattered."
-
 "Natsuki sees me and begins to snatch the books out of my hand."
-
+show natsuki turned ff vang cm ce at t11
 n "I told you I don't need your-"
-
+show natsuki surp cm oe
 mc "Whatever you think of me, you're right!"
-
-"Natsuki is stunned silent."
-
+""
 mc "I'm a self absorbed, insecure jerk who can't even cheer up his so-called best friend."
-
+show natsuki sad 
 mc "I'm a sad coward that will watch as someone is being mistreated, avoiding confrontation because he's too busy sulking."
-
 mc "You have every right to hate me."
-
-"She stands up and turns around towards me with a bewildered look on her face."
-
+show natsuki pout
+""
 mc "But I don't want to keep it that way."
-
 mc "Seeing how you stood up for Sayori made me see a glimpse of who I want to be in you."
-
 mc "I can't take back what I've done. But if you give me the chance, I'll work to someday earn your respect."
-
 "I hold a stack of manga to place in the box."
-
 mc "And hopefully, your trust"
-
 "I stack them neatly in the box, reading titles as I do and placing them in alphabetical order."
-
+show natsuki sad 
 "As Natsuki walks towards the box with her handful, she averts her eyes from me."
-
 "My words seemed to have an effect, to what end still remains unseen."
-
 "As I hold the last book, I flip through the familiar pages."
-
 mc "Red Gauntlets. Huh. You know, I was reading this series a few years ago."
-
-"Natsuki scoffs."
-
+show natsuki ff anno cm ce
+n "*scoff*"
+show natsuki om
 n "Let me guess, you grew out of it?"
-
+show natsuki doub cm oe
 mc "not at all. I just ended up getting a-"
-
 "I look at Natsuki as I catch myself before mentioning Elsea."
-
 mc "..other priorities."
-
 mc "Yeah, hobby kinda fell off for a couple of series I was in."
-
 mc "This one in particular was kind of a bummer."
-
 mc "The annoyance of keeping up with it weekly just for the artist to put it on indefinite hiatus."
-
+show natsuki lsur cm oe
 "Natsuki perks up."
-
+show natsuki om
 n "Wait, you didn't know it came back?"
-
+show natsuki cm
 "My eyes widen."
-
 mc "WHEN??"
-
+show natsuki neut om oe
 n "Like a year ago. I remember being in line that first week."
-
+show natsuki neut happ om oe
 n "That hiatus was well worth it, too. Not only a return, but that first week they returned with a full volume!!"
-
+show natsuki cm
 mc "For real?"
-
+show natsuki rhip lhip om
 n "Yup! I made sure to grab a copy and read through the whole thing that day!"
-
+show natsuki cm
 mc "Man! Now that I know that, I kinda wanna reread from the beginning."
-
 mc "I gotta reorder the volumes."
-
-"NATSUKI: You don't still have them?"
-
+show natsuki curi om oe
+n "You don't still have them?"
+show natsuki cm
 mc "No, but I should be able to find them somewhere."
-
 "I place the book back in the box and pat it in place."
-
+show natsuki doub cm oe
 mc "There you go. Not a bend nor crease. And again, I'm sorr-"
-
+show natsuki ldown anno om ce
 n "Geez, you apologize too much. I get it, you're sorry."
-
+show natsuki curi cm oe
 s "He's not sorry! He's [player]!"
-
 "Me and Natsuki both look at Sayori, realizing how much she's been eavesdropping."
-
 "She then quickly goes back to writing while trying to act like she's not watching us from her peripheral view."
-
+show natsuki dist oe cm
 mc "Well, anyway. Thanks for listening and I'm so-"
-
-"Natsuki gives a slight glare."
-
+show natsuki angr cm oe
+""
+show natsuki cross anno cm oe
 mc "..so glad that I got that off my chest."
-
+show natsuki dist
 "Natsuki gives a shrug and turns back into the closet with the box in hand."
-
+show natsuki curi
 "I turn around to walk away."
-
+show natsuki flus om oe
 n "Hey! Wait!"
-
-"I turn back to see she is parking out for the closet."
-
+show natsuki sad cm oe
+"I turn back to see she her poking her hear out the closet."
+show natsuki pout om oe
 n "Were you serious about re reading the series?"
-
+show natsuki sad cm oe
 "I pull out my phone and show her the web search I had just made."
-
 mc "I was looking for it as we speak so I don't forget."
-
+show natsuki ang om ce
 n "Well, consider yourself lucky because...here!"
-
+show natsuki cm
 "She shoves a book at me while she's looking away."
-
 "I apprehensively take it to see that it's the first volume of the series."
-
+show natsuki turned dist om oe
 n "If you want to borrow it, I guess that's fine."
-
-n "But if you damage it; you will pay for it in blood!"
-
+show natsuki anno
+n "But if you damage it, you will pay for it in blood!"
+show natsuki cm ce
 "I hold it, completely surprised by the gesture."
-
 mc "Are you sure? I mean, I'm not even a club member."
-
-"Natsuki folds her arms and turns back to the closet."
-
+show natsuki cross dist om
 n "Join or don't. I don't care which."
-
+show natsuki neut
 n "But I know you know when and where to find me now."
-
+show natsuki ce
 n "You can either take it and bring it back-"
-
-n "IN PRISTINE CONDITION..."
-
+show natsuki angr om oe
+n "IN {b}PRISTINE{b} CONDITION..."
+show natsuki dist ce 
 n "And I give you some grace..."
-
-"She looks over her shoulder at me."
-
+show natsuki oe cm
+""
+show natsuki cross neut oe om
 n "Or you can set it on the table and forfeit all responsibility."
-
+show natsuki cm
 "I look at the book."
-
 "It really is in great condition."
-
 "It looks practically new."
-
 "I steel myself as I reply with my answer."
-
 mc "I will guard it with my life!"
-
-"Natsuki looks surprised, and lightly smiles"
-
+show natsuki ma e1a b1b
+""
+show natsuki ff rhip lhip laug om ce
 "Natsuki:..eh, that's not enough collateral."
-
 mc "...Sayori's life?"
-
 s "Hey!"
-
-"Natsuki chuckles at that notion."
-
+show natsuki happ ce om
+""
+show natsuki ldown rdown oe cm
 mc "But seriously, I'll keep it safe and return it as soon as possible."
-
+show natsuki cross laugh om oe
 n "You better."
-
+show natsuki turned ldown rdown ff happ om oe
 n "Oh, and if you ever need a recommendation for other series, I've got plenty to choose from."
-
+show natsuki rhip lhip neut mc e4a b1d
 n "I'm pretty much a manga pro. You name it, I either have it, read it, or dismissed it."
-
+show natsuki rhip lhip laug cm ce
 mc "I'll keep that in mind. Thanks!"
 
 scene bg club_day
