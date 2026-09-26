@@ -662,7 +662,7 @@ show sayori turned ldown rdown happ om ce at t22
 "Sayori : Good going Yuri! It wasn't so bad, was it?"
 show sayori cm at t41
 show yuri at t44
-show monika at t43 forward neut ma e1a b1b
+show monika forward neut ma e1a b1b at t43
 "Monika gently rubs Yuri's back as she begins to calm down."
 show yuri shy happ om oe
 "Yuri:N..no.. I..g..guess."
