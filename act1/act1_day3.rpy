@@ -1,4 +1,4 @@
-﻿label act1_day3:
+label act1_day3:
 "Wednesday:"
 
 "*RIINGG RIINGG RIINGG*"
@@ -534,7 +534,7 @@ show monika cm
 "She pulls the door open and lets Sayori and I enter first. She soon follows."
 
 scene bg club_day
-with wipe left
+with wipeleft
 "As I walk in, I quickly scan the room and notice something odd"
 show yuri turned neut mf e1d b1a at t44
 "There's only one person."
