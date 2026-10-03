@@ -993,516 +993,439 @@ mc "I'll keep that in mind. Thanks!"
 scene bg club_day
 
 "I walk back to my bag and place the manga in between my most sturdy books to keep it in place."
-
+show sayori turned happ ce cm at t11
 "As I zip it back up, Sayori's beaming smile catches my eye."
-
+show sayori om oe
 s "I see you made it out alive!"
-
+show sayori cm
 mc "Yeah. I still feel bad about what I did, but at least I can try to make it up to her."
-
+show sayori om ce
 s "And that's all we can do!"
-
+show sayori cm oe
 "Sayori's mood seemed to lighten up as she continues to write."
-
-"*ruffle* *ruffle* *groan* *ruffle* *ruffle*"
-
+hide sayori
+""#*ruffle* *ruffle* *groan* *ruffle* *ruffle* sound effect
 "Hmm?"
-
+show yuri rup worr oe cm at t11
 "I look over to where the sound came for and see Yuri rubbing her forearm."
-
+show yuri ce
 "She seems a bit flustered, but after a bit, she sighs and continues reading her book."
-
 "The cover is unfamiliar to me and I can't make out the title from where I'm sitting."
-
+hide yuri
 mc "Hey, Sayori."
-
+show sayori neut cm oe at t11
 s "Hmm?"
-
 mc "Do you know what Yuri is reading?"
-
 "Sayori glances over and then shrugs."
-
+show sayori happy oe om
 s "Why don't you ask her? I'm sure she'll love discussing her novels with someone new."
-
 s "Especially when they show interest."
-
+show sayori cm
 "I nod my head and walk over to Yuri."
-
+hide sayori
 "I approach her from the front to face her directly."
-
+show yuri turned dist cm oe at t11
 "As I stand about 2 feet away, she still so engrossed in her book that seems not to notice me."
-
 "I take a look at the name of the book."
-
 "Portrait of Markov."
-
 "Never heard of it."
-
 "And she still isn't noticing me."
-
-"Should I tap her shoulder? Say something?"
-
+""
+"Should I tap her shoulder?" 
+"Say something?"
 "Just a cough frazzled Natsuki."
-
 "From how skittish she was to the prospect of me bumping into her, I really don't want to frighten her any more."
-
+show yuri neut mf e1d b1a
 "Just then, I see  Yuri's eyes look up and she smiles softly at me."
-
+show yuri happ oe om
 y "Oh, hello [player].  Just a moment, please."
-
+show yuri cm
 mc "Sure. No problem."
-
+show turned dist ce cm
 "She then begins to place her bookmark in the book and set it down."
-
+show yuri lsur cm oe
 "As she looks back, she begins to look a little shocked."
-
-y "I apologize for my lack of awareness.I hope you were not standing there too long. I sometimes get a bit enthralled in my novels."
-
+show yuri om
+y "I apologize for my lack of awareness.I hope you were not standing there too long." 
+show yuri shy neut n5 b1
+"I sometimes get a bit enthralled in my novels."
+show yuri m2
 "She sinks down a bit and her face starts to turn crimson."
-
 mc "No, not at all. I was just taking a look at what you were reading."
-
 mc "Also, I didn't want to spook you or creep you out."
-
 mc "But now that I think about it, just standing over you wasn't the best choice to avoid being creepy."
-
+show youri worr om ce
 "Yuri sighs and shakes her head with a concerned look on her face."
-
+show yuri oe
 y "Oh, it is not an issue. Your apprehension is understandable after witnessing your uh..."
+show yuri turned nerv om oe
 y "...Previous encounter."
+show yuri laug cm oe
 "I start rubbing the back of my head."
-
 mc "Yeah, that was a part of it."
-
+show yuri curi cm oe
 mc "The other one was..."
-
 mc "Well..."
-
 "My eyes shift into Sayori's direction and back at Yuri."
-
+show yuri shoc om oe
 y "Ahh!"
-
+show yuri neut n3 mj e1b b1b
 "She begins blushing again."
-
 mc "I fully apologize for Sayori's behavior. I'm used to her antics, but also know not everyone else is."
-
+show yuri laug om oe lup
 "Yuri begins to wave her hands frantically towards me."
-
 y "Oh no! It's not that serious!"
-
-y "I get it was a joke and I could have played more into it, but I didn't know how you would react or how serious the situation was."
-
-y "But given that it was Sayori, I should have assumed it was a light hearted situation and I didn't want to lean too into it since we just met and I don't know how familiar you are with everyone or what situations put you at ease and-"
-
+show yuri nerv om oe
+y "I get it was a joke and I could have played more into it, but I did not know how you would react or how serious the situation was."
+show yuri dist ce om
+y "But given that it was Sayori, I should have assumed it was a light hearted situation and I did not want to lean too into it since we just met."  
+"I do not know how familiar you are with everyone or what situations put you at ease and-"
+show yuri lsur om oe
 "Yuri stops in her tracks and stares at me with wide eyes."
-
+show yuri shy neut n5 m2 b1
 "She then turns her face so her hair covers part of it."
-
-y "I'm sorry about my rambling. I know I can be a bit long winded."
-
+show yuri m4
+y "I am sorry about my rambling. I know I can be a bit long winded."
+show yuri m2
 "I smile at her."
-
 mc "It's perfectly fine."
-
+show yuri turned neut ma e1a b1b
 "Yuri smiles back."
-
+show yuri mb 
 y "Well, anyway, I take it that you and Natsuki have made amends?"
-
+show yuri cm oe
 mc "In a way. I mean, I still feel bad, but I don't think she hates me anymore."
-
+show yuri turned lup laug om oe
 y "Despite her tumultuous nature, Natsuki can be quite the companion once a relationship is established from mutual respect."
-
-y "Although I do not agree with her choice of literary media."
-
-y "And I am sure the feelings are mutual."
-y "We both seem to have an appreciation for the written word in its multitude of expressions."
-
-y "We also seem to gravitate towards each other for...social reasons."
-
+show yuri dist om oe
+y "Although I do not agree with her choice of literary media,"
+show yuri ldown ce
+y "and I am sure the feelings are mutual,"
+show yuri turned happ oe om
+y "we both have an appreciation for the written word in its multitude of expressions." 
+y "We also seem to gravitate towards each other for"
+show yuri doub om oe
+y "...social reasons."
+show yuri rup sad cm oe
 "She begins to look sad as she traces the words on her book with her finger."
-
+""
 "The silence is beginning to get awkward again."
-
+""
 "So what is that book about?"
-
+""
 "Wait."
-
 "Why don't I-"
-
+show yuri neut rup mf e1d b1a
 mc "So, what is that book about?"
-
+show yuri happ rdown om oe
 y "Oh!"
-
+show yuri neut om oe
 y "Um...let me see."
-
+show yuri dist lup om ce
 "She closes her eyes, deep in thought on how she is going to describe the story."
-
 "..."
-
 "Why doesn't she just read the synopsis on the back. "
-
 "..."
-
 "She's still thinking, huh."
-
 "I pick up the book and begin to read the back of it."
-
-"'Dark, graphic, and deeply unsettling, Portrait of Markov is not a story of heroism or escape, but of descent.'"
-
-"'It asks whether the pursuit of truth is worth the loss of humanity, and whether some doors, once opened, can ever truly be closed again.'"
-
+"{i}'Dark, graphic, and deeply unsettling, Portrait of Markov is not a story of heroism or escape, but of descent.'{i}"
+"{i}'It asks whether the pursuit of truth is worth the loss of humanity, and whether some doors, once opened, can ever truly be closed again.'{i}"
 "Seems like some sort of thriller story."
-
 "While it does sound interesting, it's shocking that such a timid girl would be reading this type of thing."
-
+show yuri turned ldown happ om oe
 y "It is generally abou-"
-
+show yuri curi cm oe
 "She stares as I'm reading the back of the book."
-
 mc "Sorry. My curiosity got the best of me."
-
+show yuri turned happ om oe
 y "It is perfectly fine. I feel that the best way to experience literature is to engage in it directly."
-
+show yuri cm
 "I hand the book back to her."
-
 mc "So do you usually read those types of stories?"
-
-y "My tastes are a bit eclectic. The suspense genre is just my latest compulsion."
-
+show yuri om
+y "My tastes are a bit eclectic. Suspensful stories are just my latest obsession."
+show yuri rup
 y "If you are interested, I can provide a few recommendations from my latest reads."
-
+show yuri neut rdown cm oe
 mc "Eh, that's okay."
-
+show yuri sad cm oe
 "Yuri begins to look a little down.."
-
 mc "Don't get me wrong, I'm grateful for the offer. I just haven't read much lately."
-
+show yuri turned neut cm oe
 mc "I used to read all sorts of mangas, visual novels, and fan fictions in middle school, but my reading skills have kinda taken a nose dive."
-
 "Once I got with Elsea, most of my free time seemed to go by the wayside."
-
+show yuri om
 y "Oh. I see."
-
+show yuri ce
 "She sighs."
-
+show yuri om oe
 y "Well, if you decide to join the club, hopefully your enthusiasm for reading will be reignited."
-
+show yuri nerv n2 om oe
 y "Uh... That's not to say that you're obligated to join, it's just..."
-
+show yuri turned neut n1 mb e1a b1b
 y "It would be enjoyable to share literary experiences with a compatriot."
-
+show yuri ma 
 "Wait, shouldn't they already be doing this in a literature club? Maybe it's newer than I thought."
-
 "I also can't help but note how self conscious Yuri is with how she presents herself."
-
 "It's almost like when she feels she's beginning to express her feelings, she retracts in fear."
-
 "I can understand the feeling. It reminds me of every time I was dragged along with Elsea's friend group."
-
 mc "I'm still thinking about it, but I will gladly take a recommendation if I do decide to join."
-
 mc "And even though I doubt I can add much to the conversation, I would love to discuss it with you."
-
+show yuri turned neut mb e1a b1a
 y "Wonderful! I am hoping for your acceptance to our club!"
-
+show yuri ma
 mc "Thanks! Well, I should go talk to Monika."
-
+show yuri happ rup lup ce om
 y "Of course. It was a pleasure speaking with you."
-
 mc "Ditto."
-
+hide yuri
+show monika forward neut cm oe at t11
 "I get up to turn to Monika, who seems to be already looking in my direction."
-
+show monika n3 md e2b b1a
 "But as soon as I try to make eye contact, she quickly averts her eyes and begins to work back on the computer."
-
 "Huh. That was strange."
-
+show monika happ cm oe
 "As I walk over to the desk, she looks back up to me and greets me with a radiant smile."
-
+show monika om
 m "So, what are your thoughts so far?"
-
+show monika neut lpoint mb n2 e4b b1b
 m "I would assume positive seeing you haven't gone running for relief."
-
+show forward neut ldown ma n2 e4b b1b
 "I chuckle."
-
+show monika cm oe
 mc "Well, you all have made it so cozy and comforting, it's hard not to stay."
-
+show monika neut rhip om oe
 m "Even after the whole Natsuki issue?"
-
+show monika cm
 "I sigh."
-
 mc "I think we came to a mutual understanding."
-
 mc "I can't say she likes me, but at least she doesn't hate me."
-
 mc "...I think."
-
+show curi om oe
 m "So what even happened? It must have been more than just bumping into her."
-
+show monika cm
 "I look down at the floor in shame."
-
 mc "Well, that happened on Tuesday. Monday's encounter was THE event."
-
-"Monika begins to show concern."
-
+show monika sad cm oe
+""
 mc "Well, some bullies were picking on her and I..."
-
+show monika forward neut rdown om oe
 mc "...did nothing."
-
 mc "I saw what they were doing and just walked away."
-
 mc "All because I was stuck in my feelings."
-
 mc "So her reaction was valid. I have a long way before I can even feel like I've made it up to her."
-
+show monika neut ma e1a b1b
 "As I look down reflecting on the situation, I feel a hand on my shoulder."
-
 "I look up and Monika is looking at me with a somber smile."
-
+show monika neut mb1 e1a b1b
 m "The fact that you feel this way and can recognize the issue means you aren't a bad person at all."
-
-m "I know you were going through some things and you didn't feel like it was your problem, But it's understandable not to want to help others when you're already at a low place."
-
+m "I know you were going through some things and you didn't feel like it was your problem,"
+m "but it's understandable not to want to help others when you're already at a low place."
+show monika forward neut mb n2 e1a b1b
 m "Trust me. I've been there."
-
+show monika ma n1 e1a b1b
 "Wait. She has?"
-
 "Monika always seemed like the type that had her life together and would go through such a foundational shake-up."
-
 "But...she is human, too."
-"And I guess my outlook was a bit warped by what I've heard from Elsea. I never had much interaction outside of a few projects we worked together with last year."
-
+"And I guess my outlook was a bit warped by what I've heard from Elsea." 
+"I never had much interaction outside of a few projects we worked together with last year."
 "But she truly is so nice, that I couldn't see anyone having issues with her."
-
 mc "Thank you for that. I will try to make sure I work on being better."
-
-"Monika smiles."
-
+show monika happ ce cm
+""
+show monika lpoint oe om
 m "That's all anyone can ask for!"
-
+show happ ldown om oe
 m "Now that you've seen the club and met everyone, have you made a decision?"
-
+show monika cm
 "I put my hand to my chin."
-
 mc "Well, after talking with Natsuki and Yuri, I feel like everyone here has a unique impression on me."
-
 mc "I've been in such a rut for so long, this change may be good for me socially."
-
 mc "To be honest, I feel like this may be what can take my mind off my...situation"
-
-"Monika smiles slyly."
-
+show monika sedu lpoint om oe
 m "Well, I can see how a club full of cute girls can help after what you've been through~"
-
-"Monika winks at me as I begin to blush."
-
+show monika neut ldown e1e b1a ma
+"I start to feel my face getting hot"
+show monika happ cm oe
 mc "I mean, that's not the main reason."
-
+show monika rhip sedu om oe
 m "So it IS a reason, even if a small one?"
-
+show monika laug ce cm
 "I avert my eyes."
-
+show monika happ oe cm
 mc "Um, actually I was hoping to get some more help with my essays."
-
 mc "So with all those factors in mind, I will say yes. I will join the literature club."
-
-"Monika's face lights up."
-
+show forward rdown lsur cm oe
+show monika happ ce om
 m "That's fantastic! Thank you thank you thank you!!"
-
+show monika forward happ cm ce
 "Monika begins to hug me, catching me off guard."
-
+show monika neut n2 mb e1a b1b
 "Before I can even register what happened, she backs off of me and pushes the hair out her face."
-
 m "Sorry. Got a little carried away."
-
+show monika neut n1 ma e1a b1b
 mc "N..no problem. Understandable."
-
+show monika forward ysur cm ce
 "Monika composes herself as she steps up to the other girls to address them."
-
+show monika happ lpoint rhip om oe
 m "Okay, everyone!"
-
+show sayori happ cm oe at t41
+show monika happ lpoint cm oe at t42
+show natsuki cross neut cm oe at t43
+show yuri turned neut cm oe at t44
 "All the girls put up their current activities and move to the front of the room."
-
+show monika om
 m "I would like to announce that [player] has come to a decision."
-
+show sayori flus cm oe
+show monika cm
+show natsuki cross ff curi cm oe
+show yuri sedu cm oe
 "All the girls look at her with bated breath."
-
-m "[player] has decided to join usas the newest member of the literature club!"
-
+show monika happ lpoint om oe
+m "I'm happy to announce [player] as the newest member of the literature club!"
+show sayori turned happ rup lup ce om 
+show monika cm ce
+show natsuki turned ff happ cm oe 
+show yuri turned happ cm oe lup
 s "YEEEE!!!"
-
+show monika om
+show natsuki ce om 
+show yuri ce 
 "Sayori runs at me squeezing me from the side."
-
 mc "Gah! Sayori I..can't...breathe..."
-
+show Sayori turned neut ldown rup mb e1b b1b
+show natsuki turned ff happ oe cm
+show yuri turned happ cm oe ldown
 "She immediately lets go."
-
 s "Oh, ehh heh..sorry bout dat."
-
+show sayori turned happ om oe
 s "But I'm just so excited! We're in the same club now!"
-
+show sayori cm
+show monika forward ldown happ om oe
 m "Not only that, but our club can now be officially recognized."
-
+show monika cm
+show yuri turned happ om oe
 y "I am glad that you are giving the club a chance. I hope we do not disappoint."
-
+show natsuki cross ff neut mc e4a b1d
+show yuri cm
 n "And you better not change your mind about joining."
-
+show natsuki cross ff happ cm oe
 mc "I will do my best to be a diligent member."
-
+show natsuki om
 n "I'll hold you to that."
-
+show monika forward happ lpoint rhip om oe
+show natsuki cm
 m "Well, looks like we can end this meeting on a very positive note!"
-
 m "This opens up the avenues for a few activities and plans I've had for the rest of the year, so keep an eye on the group chat for updates."
-
+hide yuri
+hide sayori
+hide natsuki
+show monika forward rdown ldown happ oe om at t11
 m "Speaking of which, [player], can you give me your number?"
-
+show monika cm
 mc "Huh?"
-
-"Monika is thrown off realizing what she asked."
-
+show monika forward neut me e2a b2a n2
+show monika forward neut n4 mb e4a b1b 
 m "F..for the group chat, of course."
-
+show monika forward happ om oe
 m "We meet everyday, but if I need to cancel a meeting or you can't come to one, you can let us know in the chat."
-
+show monika cm
 mc "Oh. Yeah, of course."
-
 "Monika hands me her phone and I type my number."
-
 "I shortly get a text in the group chat:"
-
+#show as phone
 "'Welcome [player] ; )'"
-
+show monika forward happ lpoint om oe
 m "Well everyone, it looks like it's time to end our meeting. You're all free to leave."
-
 m "I just have a bit of paperwork to catch up on, so don't wait up."
-
+hide monika
 "As we all return to our desks to begin packing up I look up at Sayori."
-
 "It feels good spending time with her again."
-
 "I should probably walk home with her. She'll enjoy that."
-
 "But I do need to get some groceries on my way home."
-
 "Maybe I can invite her."
-
 mc "Hey Sayori!"
-
+show sayori turned neut cm oe at t11
 s "Hmmm?"
-
 mc "I was gonna stop by the store to get a few things on my way home. Feel like taking a detour?"
-
+show sayori turned happ om oe
 s "Of course!"
-
 s "It'll be like old times where we always went together for snacks."
-
 mc "Well then, let's roll out!"
-
-s "10-4 Good buddy!"
-
+show sayori turned happ lup ce om
+s "10-4 good buddy!"
+hide sayori
 "As we leave, we share our farewells with the rest of the club."
-
 "While Monika replies, a look on her face caught the corner of my eye."
 "Was she blushing?"
-
+show monika forward neut n3 at t11
+show monika forward  dist cm oe
 "I turn around to check and I see her looking, but she quickly averts her eyes."
-
+show monika neut cm oe
 "She slowly looks back and our eyes meet."
-
-"She gives a sort of embarrassed smile."
-
+show monika forward nerv cm ce
 "I smile back and wave."
-
 "I then turn back to catch up with Sayori."
 
 scene bg street_2_dusk
 
 "On our way back from the store, I notice that Sayori has been unusually silent for a while."
-
+show sayori turned dist cm oe at t11
 "I glance over to see if she was still sad from earlier."
-
 "She doesn't look down, just lost in thought."
-
 "Hmm..."
-
 "I dig in one of my bags and pull out a packaged honey bun from its box and dangle it in front of Sayori."
-
 "To my surprise, she doesn't even notice it."
-
 "I stop and she continues walking."
-
 mc "Uh, Sayori!?"
-
+show sayori turned flus cm oe
 s "Huh?!"
-
-"She stops and turns around in a confused state."
-
 mc "You've been playing space cadet for the past few minutes. I'm usually the one going out of orbit."
-
+show sayori turned neut mb e1a b1b
 s "Oh, sorry."
-
+show sayori turned dist cm oe
 "We continue walking, but she continues to go in and out of it."
-
 "I hope she's okay."
 
 scene bg residential_day
 
 "As we get closer to our houses Sayori finally starts to speak up more."
-
-s "I hope you're really okay with joking with the club."
-
+show sayori turned dist om oe
+s "I hope you're really okay with joining the club."
 mc "Why wouldn't I be?"
-
+show sayori turned sad om oe
 s "Well, given everything from last week..."
-
+show sayori cm
 mc "Yeah. It's still a little sore. Hopefully the club can help keep my mind off things."
-
+show sayori turned neut mb e1a b1b
 s "Well, let me know if you need anything or if there's anything with the club that's affecting you, I'll do everything in my power to make it right."
-
+show sayori turned sad cm oe
 mc "Thanks for that, Sayori."
-
 mc "I'll be sure to let you and Monika know if I can't stay, but I don't think it will ever come to that."
-
-"Sayori smiles."
-
+show sayori happ cm oe
+show sayori om
 s "Well, I'm here for you no matter what!"
-
+show sayori cm rup
 mc "Thanks Sayori. That means a lot."
-
 "Once we reach our houses, we give each other a good bye and go in."
 
 scene bg kitchen
-
 "As I enter and put up groceries, I sit down and think about what I need to do."
-
 "Homework."
-
 "I open my bag to start on homework and see the manga Natsuki gave me."
-
 "I need to keep this safe."
 
 scene bg bedroom
 
 "I'll leave it on my night stand."
-
 "I can try to read a bit before bed to get it back to her next week."
-
 "In the club."
-
 "That we are both part of."
-
 "I guess... I'm moving on."
-
 "Maybe this club can help me focus on bettering myself."
-
 "Everyone seems nice in a way."
-
 "Even the little pink fireball."
-
 "I don't know how far this club will take me, but I'm willing to see."
-
 "I go back downstairs to eat and do homework before going to bed."
 
 scene bg black
