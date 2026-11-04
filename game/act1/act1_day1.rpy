@@ -1,6 +1,6 @@
 ﻿label act1_day1:
     stop music fadeout 5.0
-
+    
     "Day 1: Monday" 
     play sound "mod_assets/sfx/alarm_clock.ogg" loop
     "*BEEP* *BEEP* *BEEP*"  #[Insert alarm sound bit in coding]
@@ -9,8 +9,11 @@
     "Why even wake up? What's the point?"
     scene bg bedroom
     with fade
+    
     "I stare at the ceiling while laying in my bed as my phone's alarm blares."
     stop sound
+    show yuri at peek_left
+            
     "After a while I turn towards it to turn off the alarm, revealing my home screen with the latest notification."
     "I'm sorry we couldn't make this work..."
     #[a phone screen image that's interactable. Contents will be discussed]

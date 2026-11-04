@@ -69,9 +69,9 @@ label start:
     
 
 
-    #call act1_day1
-    #call act1_day2
-    #call act1_day3
+    call act1_day1
+    call act1_day2
+    call act1_day3
     call act1_day4
     call act1_day5
     call act1_day6

@@ -2044,3 +2044,15 @@ default sayori_confess = True
 
 # This variable tracks whether we read Natsuki's 3rd poem in Act 2.
 default natsuki_23 = False
+
+# Define the peek position (adjust xanchor to show more or less of the sprite)
+transform peek_left:
+    xalign 0.0      # Align to the left edge of the screen
+    yalign 1.0      # Sit at the bottom of the screen
+    xanchor 0.4     # 40% of the sprite is off-screen to the left
+
+transform peek_right:
+    xalign 1.0      # Align to the right edge of the screen
+    yalign 1.0      # Sit at the bottom of the screen
+    xanchor 0.6     # 60% of the sprite is off-screen to the right
+
