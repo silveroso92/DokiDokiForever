@@ -165,89 +165,127 @@
     mc "Wow. Do you ever think about getting back into architecture? Maybe as a missed opportunity?"
     a "Of course. But I never let it hold me back. Life is like driving: you only need to glance at the rear view, but looking back too long will veer you off course."
     "I sigh and begin to lightly smile."
-    mc "Yeah. I'll keep that in mind, thanks."
+    mc "Yeah. I'll  keep that in mind, thanks."
     scene bg corridor
     "As I speed walk my way to the clubroom, I enter to see..."
     scene bg club_day
-    show monika forward t11
+    show monika forward ce ma at t11
     "Just Monika."
     "Huh."
     "She is sitting at the teacher's desk writing and...humming?"
+    show monika forward ce ma 
     "As I stand there quietly, I observe her humming a tune with her eyes closed and tapping her foot in a rhythmic pattern. "
     "As I slowly walk in, it looks like she's repeating the melody like she's trying to get it right. After a bit, she goes back to writing and repeating the process."
     "I make it to the front of the desk while she's humming again with her eyes closed and take a look at what she's writing. It looks like musical notes."
+    show monika e1d
     "As she opens her eyes she's slightly startled by my presence."
-    m "Eep!"
-    show monika pani 
-    show monika 
-    show monika om
+    show monika shoc om oe at f11
+    m "Eep!{nw=0.5}" 
+    pause 0.5
+    show monika shoc om oe at t11
+    pause 0.5
+    show monika vsur cm ce 
+    pause 0.5
+    show monika vsur cm ce
+    pause 0.5
+    show monika nerv oe om rhip at f11
     m "Oh, [player]! How long have you been standing there?"
-    show monika cm
+    show monika happ oe cm rdown at t11
     "She proceeds to take ear plugs out of her ears."
     
-    mc "S-sorry. I didn't want to disturb you, but I was also a bit curious.I didn't know you wrote music."
-    show monika om 
+    mc "S-sorry. I didn't want to disturb you, but I was also a bit curious. I didn't know you wrote music."
+    show monika om happ oe om at f11
     
     m "Yeah, it's not that big a deal. It's just something I've been dabbling with here and there."
-    show monika cm
+    show monika cm at t11
     mc "So is this the hobby you were talking about the other day?"
-    show monika om
+    show monika nerv ce om at f11 
     m "Y..yeah. I know it's silly, but it's a song I've been writing. I've been chipping away whenever I find time and inspiration. Sadly those two factors rarely cross nowadays."
-    show monika cm
+    show monika cm e1a at t11
     mc "Well that sucks. Are you at least close to finishing? I mean, I only heard that bit and I would love to hear more. You have a nice voice."
-    "Monika begins to blush."
-    show monika om
+    show monika lpoint n4 nerv om ce at f11
     m "Well, I'm more of a piano player than a singer. And even that, I'm not very good at it."
-    show monika cm
+    show monika cm at t11
     mc "Well if you play as good as you hum, then you've got a potential audience in me. I'd love to hear you play sometime."
-    "Monika's eyes begin to gleam."
-    show monika om
+    show monika e2a mg 
+    pause 1.0
+    show monika mi at f11
     m "Well, maybe I-"
-    show monika 
+    scene bg club_day with wipeleft
     "SLAMM!!!!" #[Door Slamming Open sound bit here]
-    scene bg club_day
-    show Sayori at t11
+    
+    show sayori turned happ cm oe lup rup at t11
     "The door flings open while Sayori stumbles in with her arms full of books."
-    show sayori om
+    show sayori om at f11
     s "Got the books and got the stragglers! Objectives complete!"
     show sayori cm at t43
-    show natsuki at t42
-    show yuri at t41
+    show natsuki turned at t42 with moveinleft
+    show yuri shy at t41 with moveinleft
     "Natsuki and Yuri walk in behind her."
-    show monika om at t44
+    show monika forward happ om oe lpoint rhip at f44 with moveinright
     m "Oh, there you two are. We were a bit worried that you weren't already here."
-    show monika cm
-    show yuri om
+    show monika cm ldown at t44
+    show yuri neut om oe at f41
     y "I apologize for the tardiness. I had an"
-    show yuri
+    show yuri shy n3  
     y "...unexpected matter that needed attention."
-    show yuri
-    show natsuki om
-    show monika
-    show sayori
+    show yuri m2 e3 at t41
+    show natsuki happ om at f42
+    show monika vsur cm rdown 
+    show sayori lsur cm oe 
     n "Yuri needed my help to take a dump."
-    
+    show yuri turned shoc om oe at f41
+    show natsuki cm at t42  
     y "NATSUKI!!!"
+    show yuri s_scream
     hide yuri with moveoutright
     y "Don't talk about that in mixed company!!"
     "Yuri walks briskly past me, making sure to avoid eye contact with me."
-    show Natsuki
-    n "What, you mean [player]? He barely counts due to his lack of balls"
-    "Monika becomes furious."
-    show monika om
-    m "That's enough Natsuki! I've-"
-    show monika
+    show natsuki turned laug om oe at f41
+    n "What, you mean [player]?" 
+    show natsuki ce 
+    n "He barely counts due to his lack of balls"
+    show monika vang cm oe 
+    show natsuki cm at t41
+    pause 0.3
+    show monika lean m2 e2 b2 at f43
+    show sayori vsur cm oe at t44
+    show natsuki lsur om oe
+    m "That's enough Natsuki! I've-{w=1}"
     "I hold out my arm towards Monika to stop her."
+    show monika forward curi om oe at t43
+    show natsuki cm
+    show sayori mm
     mc "No, it's okay Monika. Let her get things off her chest. I mean, it's not like anything is there to begin with."
-    show yuri at peek_right
+    show yuri turned e3a at peek_right
+    show monika shoc om oe 
+    show natsuki shoc om oe 
+    show sayori shoc om oe 
+    pause 1.0
+    show monika e3b
+    show yuri e3b
+    show sayori e3b
+    show natsuki vang cm oe
     "There is a deafening silence in the room as Sayori, Monika, and Yuri stare at me in disbelief as I eye down Natsuki."
     "They slowly turn to her and she is staring right back at me with a scowl."
+    hide monika
+    hide sayori
+    hide yuri 
+    show natsuki mn at t11
     "As the corners of her lips curl into a slight smile, she replies."
+    show natsuki sedu om ce at f11 
     n "Heh. Guess you have some balls after all."
+    show natsuki cm oe at t11
     mc "Well, I couldn't let you be the only one."
+    hide natsuki with moveoutleft
+    show monika forward at t43
+    show sayori turned at t44
     "Natsuki smirks and walk to her desk as Monika and Sayori look at each other, confused on what to do in this situation."
+    show monika at t22
+    show sayori at t21  
     mc "So, what books do you have?"
     s "Huh? Oh! Uh..these are the copies for our reading activity. I can't wait for you to-"
+    hide sayori with moveoutbottom
     mc "Sayori! Watch out!"
     "Sayori trips over the leg of a chair and spills the books on the floor, banging her elbow on the edge of a desk as she falls."
     s "Ssssss....ahhhhh....ssssss...."

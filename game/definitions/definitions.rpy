@@ -2049,10 +2049,14 @@ default natsuki_23 = False
 transform peek_left:
     xalign 0.0      # Align to the left edge of the screen
     yalign 1.0      # Sit at the bottom of the screen
-    xanchor 0.4     # 40% of the sprite is off-screen to the left
+    xanchor 0.6   
+    zoom .75
+    rotate 10  # 40% of the sprite is off-screen to the left
 
 transform peek_right:
     xalign 1.0      # Align to the right edge of the screen
-    yalign 1.0      # Sit at the bottom of the screen
-    xanchor 0.6     # 60% of the sprite is off-screen to the right
+    yalign 0.5      # Sit at the bottom of the screen
+    xanchor 0.5     # 60% of the sprite is off-screen to the right
+    zoom .75
+    rotate -10
 

@@ -12,7 +12,6 @@
     
     "I stare at the ceiling while laying in my bed as my phone's alarm blares."
     stop sound
-    show yuri at peek_left
             
     "After a while I turn towards it to turn off the alarm, revealing my home screen with the latest notification."
     "I'm sorry we couldn't make this work..."
