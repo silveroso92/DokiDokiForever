@@ -69,10 +69,10 @@ label start:
     
 
 
-    #call act1_day1
-    #call act1_day2
-    #call act1_day3
-    #call act1_day4
+    call act1_day1
+    call act1_day2
+    call act1_day3
+    call act1_day4
     call act1_day5
     call act1_day6
     call act1_day7
@@ -83,7 +83,7 @@ label start:
     call act1_day12
     call act1_day13
     call act1_day14
-
+    call act1_day15
     
     ## Example on calling scripts from DDLC.
     # if persistent.playthrough == 0:
