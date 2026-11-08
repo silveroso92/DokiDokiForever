@@ -57,47 +57,73 @@ label act1_day15:
     scene bg corridor
     "As I approach the clubroom, I see Natsuki and Yuri standing outside the closed door."
     show natsuki turned at t43
-		show yuri turned at t44
-		mc "Hey, what's going on? Is the door locked or something?"
+    show yuri turned at t44
+    mc "Hey, what's going on? Is the door locked or something?"
     show natsuki om at f43
-		n " Sayori stopped us before we got in saying they had to talk to faculty about something. There's a teacher in there with her and Monika right now."
+    n " Sayori stopped us before we got in saying they had to talk to faculty about something. There's a teacher in there with her and Monika right now."
     show natsuki cm at t43
-		mc "Do you think it's something bad?"
+    mc "Do you think it's something bad?"
     show yuri om at f44
-		y "I can not perceive any reason to believe so."
+    y "I can not perceive any reason to believe so."
     show yuri cm at t44
-		show natsuki om at f43
-		n " You don't think they'll cancel the club cus we cut out early, will they?"
+    show natsuki om at f43
+    n " You don't think they'll cancel the club cus we cut out early, will they?"
     show natsuki cm at t43
-		mc "I hope not."
+    mc "I hope not."
     show yuri om at f44
-		y "It is not like the room was empty. I was here the entire duration of the festival."
-		y "Though, the lack of follow up from other students may be a factor..."
-		show yuri cm at t44
+    y "It is not like the room was empty. I was here the entire duration of the festival."
+    y "Though, the lack of follow up from other students may be a factor..."
+    show yuri cm at t44
     "As we sit in silence and suspense, we can faintly hear the others in the room."
-    s "Okay, I'll get them now."
-		show sayori turned happ at t41
+    s "{i}Okay, I'll get them now.{i}"
+    show sayori turned happ at t41
+    pause 0.5
+    show sayori sad
     "As the doors open her bright face grows one of concern."
+    show sayori om at f41
     s "Woah, guys. What's wrong?"
+    show sayori cm at t41
+    show natsuki om at f43
     n " Why are you asking us? You're the one with the inside knowledge."
+    show sayori happ om at f41
+    show natsuki cm at t43
     s "Oh! That's Right! We've got great news! Come on in!"
+    show sayori cm at t41
     scene bg club_day
     "As we walk into the club we see Monika sitting filling out some paperwork and-"
+    show monika happ forward at t33
+    show agawa at t32
     mc "Mr. Agawa?!"
+    show agawa at f32
     a "Surprised huh."
+    show agawa at t32
     mc "Wait, what's going on? Is there something I did wrong?"
+    show monika forward om at f33 
     m "Don't worry [player], this is a good thing."
+    show monkia cm at t33
+    show agawa at f32
     a "Well, let me introduce myself. My name is Mr. Agawa, and I will be your faculty advisor."
+    show agawa at t32
+    show natsuki cross om at f31 with with moveinright
     n " Faculty advisor? What's this mean?"
+    show natsuki cm at t31 
     mc "Don't tell me you're gonna be in the club meetings as well."
-    a "Oh, god no! While I can respect literature, it's honestly not my forte. "
+    show agawa at f32
+    a "Oh, god no! While I can respect literature, it's honestly not my forte."
     a "But, after speaking with Ms Monika the other day after the festival, I resonated with her reasonings for this club and figured I can at least throw my name behind it. "
     a "I'll basically be a silent partner. Only here if you need special permission for events."
+    show agawa at t32
+    show monika om at f33
     m "Thank you again, Mr. Agawa. I can't thank you enough."
+    show monika cm at t33
+    show agawa at f32
     a "It's my pleasure. Well, now that that's all handled, [player]?"
+    show agawa at t32
     mc "Y...yeah?"
     "Mr. Agawa looks at the girls and back to me."
+    show agawa at f32
     a "Mmmmhmm."
+    hide agawa at t32 with moveoutleft
     "He then walks out the door. "
     "What the hell was that about?"
     n " So it's cool we got a faculty...whatever, but was that really necessary to keep us out of the club room?"
@@ -136,7 +162,7 @@ label act1_day15:
     s "You've got friends for life here. Thick or thin, you can count on us."
     "My hands are then grabbed by Monika."
     m "Always. And forever."
-    "As I think back over all that I've gone through, everything they've helped me with, I can't help but feel joy in knowing that I have friends like these. "
+    "As I think back over all that I've gone through, everything they've helped me with, I can't help but feel joy in knowing that I have friends like these."
     "I hope we can stay like this for as long as possible."
     "END OF ACT 1"
     return
