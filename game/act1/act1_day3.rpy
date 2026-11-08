@@ -114,9 +114,9 @@ show sayori cm at t11
 "I give her a light smile."
 mc "No, I'm [player]."
 show sayori neut e2a mf b1e
-pause 0.7
+pause 1.5
 show sayori b1a md
-pause 0.5
+pause 1.0
 show sayori anno cm oe
 "I stand there with a goofy grin on my face."
 show sayori om at f11
@@ -133,81 +133,83 @@ show sayori m2 at t11
 mc "Of course. It will be a nice change of pace."
 show sayori turned happ om ce at f11
 s "YAY!!"
-show sayori rdown ldown
+show sayori rdown ldown at player_perspective
 "She tackles me and begins squeezing until she realizes what she just did."
 "I stare at her a bit off guard as she looks up to me with her face turning red"
-show sayori
-show sayori tap nerv oe om
+show sayori at f11
+pause 0.1
+show sayori at t11
+show sayori tap nerv oe om at f11
 s "S..sorry..."
+show sayori cm at t11
 mc "Got a little excited?"
-show sayori tap ce om
+show sayori tap ce om at f11
 s "Heheh..."
 show sayori turned ldown rdown worr mb n2
 s "It's just, it's been so long since we were able to just hang out."
+show sayori cm at t11
 mc "Yeah... sorry about that"
-show sayori om oe
+show sayori om oe at f11
 s "It's..okay. I get it. I guess I might have gotten in the way sometimes"
-show sayori turned sad oe cm
+show sayori turned sad oe cm at t11
 mc "To be honest?  I never felt you got in the way"
-show sayori dist om oe
+show sayori dist om oe at f11
 s "That makes one of us..."
-show sayori cm
+show sayori cm at t11
 "We both walk in the awkward silence, neither of us wanting to bring up the obvious"
-hide sayori
-show bg street_1
+scene bg street_1 with wipeleft
 show sayori turned neut cm oe at t11
 "While we walk, I keep catching Sayori glancing at me, looking like she is wanting to say something."
 show sayori neut mj e1b
 "But every time I turn my head to look at her, she clams up and starts looking forward to avoid eye contact"
-
 "I never noticed how much things have really changed between us."
-
 "I used to be so open with her. But at the moment, it feels like I'm being forced to spend time with a stranger."
-show sayori turned dist om oe
+show sayori turned dist om oe at f11
 s "So..."
-
+show sayori at t11
 "I glance to the side towards her, hoping to keep her from freezing up again."
-show sayori turned neut om oe
+show sayori turned neut om oe at f11
 s "How are you holding up..."
-show sayori lsur cm oe
+show sayori lsur cm oe at t11
 "I sigh."
-show sayori turned flus om oe
+show sayori turned flus om oe at f11
 s "-I..IN school!"
 show sayori tap dist om oe
 s "You know,  your classes. Homework and whatnot."
-show sayori cm oe
+show sayori cm oe at t11
 "I raise an eyebrow to her."
 mc "I'm..fine."
 show sayori turned sad oe cm
 "Sayori looks as if she caught my hesitation."
-show sayori oe om
+show sayori oe om at f11
 s "Are you sure? I mean, even I'm a bit behind here and there."
-show sayori oe cm
+show sayori oe cm at t11
 "I keep looking forward, knowing what I'm about to ask will either help or hurt the rebuild of our relationship."
-
 mc "Did you talk to your mom about me?"
 show sayori turned neut cm e1g b1b
-"Sayori looks shocked and begins to look forward again, silently tearing up a bit."
-show sayori worr oe om
+pause 1.0
+show sayori worr oe om at f11
 s "It's not like I just told her. She was asking because, well..."
-show sayori sad oe cm
+show sayori sad oe cm at t11
 mc "Yeah. Yesterday."
-show sayori worr oe om
+show sayori worr oe om at f11
 s "Yeah"
 show sayori worr om ce
 s "She was just saying how you turned into such a delinquent and I knew it wasn't like that so I-"
-show sayori flus cm oe
+show sayori flus cm oe at t11
+pause 0.3
+show sayori at hop
 "I place my hand on her shoulder and she jumps a little."
 show sayori neut e2a b1f mf
 mc "Thank you."
-show sayori curi om oe
+show sayori curi om oe at f11
 s "Uh...you're welcome?"
-show sayori neut mj e1a b1f
+show sayori neut mj e1a b1f at t11
 "She stares at me puzzled."
 mc "So, did you have enough pot roast for your lunch."
 show sayori shoc om oe
-"Her eyes get big and her mouth begins to drool a little."
-show sayori happ oe om
+pause 0.5
+show sayori happ oe om at f11
 s "Yeah. It was Soooo yummy last night. And it always tastes better the next day!"
 show sayori lsur oe cm
 s "!"
