@@ -2060,3 +2060,25 @@ transform peek_right:
     zoom .75
     rotate -10
 
+transform player_perspective:
+    subpixel True
+    # Organically ease into the close-up over 0.6 seconds
+    ease 0.6 zoom 1.0 xalign 0.5 yalign 0.15
+
+transform jitter:
+    linear 0.1 xoffset -3
+    linear 0.1 xoffset 3
+    repeat
+    
+# 1. Define the custom ATL transformation
+transform fall:
+    parallel:
+        # Move the sprite's y-position down off the screen
+        easeout 0.3 ypos 2.5 xpos 2
+    pause 0.1          # Animate over 0.3 seconds
+    parallel:
+        # Rotate from its current angle to 90 degrees
+        easeout 0.3 rotate -125
+
+
+

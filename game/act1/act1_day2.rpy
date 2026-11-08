@@ -175,25 +175,29 @@
     "Crap!"
     "My autopilot brain brought me straight to the art club!"
     "I turn around to go to another exit when-"
-    show natsuki turned ldown rdown pani om ce at t11
+    show natsuki turned ldown rdown pani om ce at f11
     qu "AHH!!"
-    show natsuki cm ce
+    show natsuki cm ce at t11
     "I bump into someone small, knocking the book out of their hand. And they fall on the floor."
     show natsuki turned angr cm oe
     mc "AH! Sorry, I didn't see you."
     "I immediately bend down and grab the book on the ground."
     "It's a pink covered manga book with cutesy girls in dramatic poses on the cover."
-    show natsuki oe om
-    qu "Geez, dude! Watch where you're go-"
-    show natsuki turned lsur oe cm
+    show natsuki oe om at f11
+    qu "Geez, dude! Watch where you're go-{nw=1.0}"
+    show natsuki turned lsur oe cm at t11
+    pause 1.0   
     "As she looks up, I notice it was the same girl who was getting bullied yesterday."
     "My face goes pale with the realization while she gets red with anger and embarrassment"
-    show natsuki turned vang om ce
+    show natsuki turned vang om ce at f11
     qu "Of course you didn't see me, you prick!"
+    show natsuki oe
     qu "Not like you care about anyone but yourself, right?"
+    show natsuki cm at t11
     "She snatches her book out of my hand"
-    show natsuki ce om
+    show natsuki ce om at f11
     qu "Don't touch! Your grubby hands are gonna ruin the quality!"
+    show natsuki cm at t11
     mc "...I...I'm So-"
     show natsuki cross fs neut b2 e4
     qu "Save it!"

@@ -245,35 +245,38 @@
     n "What, you mean [player]?" 
     show natsuki ce 
     n "He barely counts due to his lack of balls"
-    show monika vang cm oe 
+    show monika vang cm oe at jitter
     show natsuki cm at t41
-    pause 0.3
+    pause 1.0
     show monika lean m2 e2 b2 at f43
     show sayori vsur cm oe at t44
     show natsuki lsur om oe
-    m "That's enough Natsuki! I've-{w=1}"
-    "I hold out my arm towards Monika to stop her."
+    m "That's enough Natsuki! I've-{nw=1}"
     show monika forward curi om oe at t43
+    "I hold out my arm towards Monika to stop her."
     show natsuki cm
     show sayori mm
+    show monika cm
     mc "No, it's okay Monika. Let her get things off her chest. I mean, it's not like anything is there to begin with."
-    show yuri turned e3a at peek_right
+    show yuri turned om e3a at peek_right
     show monika shoc om oe 
     show natsuki shoc om oe 
     show sayori shoc om oe 
-    pause 1.0
+    pause 1.4
+    "There is a deafening silence in the room as Sayori, Monika, and Yuri stare at me in disbelief as I eye down Natsuki."
     show monika e3b
     show yuri e3b
     show sayori e3b
     show natsuki vang cm oe
-    "There is a deafening silence in the room as Sayori, Monika, and Yuri stare at me in disbelief as I eye down Natsuki."
     "They slowly turn to her and she is staring right back at me with a scowl."
     hide monika
     hide sayori
     hide yuri 
-    show natsuki mn at t11
+    show natsuki at t11
+    ""
+    show natsuki e1d b1e mn at t11
     "As the corners of her lips curl into a slight smile, she replies."
-    show natsuki sedu om ce at f11 
+    show natsuki cross sedu om ce at f11 
     n "Heh. Guess you have some balls after all."
     show natsuki cm oe at t11
     mc "Well, I couldn't let you be the only one."
@@ -285,9 +288,11 @@
     show sayori at t21  
     mc "So, what books do you have?"
     s "Huh? Oh! Uh..these are the copies for our reading activity. I can't wait for you to-"
-    hide sayori with moveoutbottom
+    show sayori at fall
+    pause 0.4
     mc "Sayori! Watch out!"
     "Sayori trips over the leg of a chair and spills the books on the floor, banging her elbow on the edge of a desk as she falls."
+    scene bg black ##Create CG of composite of sayori on floor from original
     s "Ssssss....ahhhhh....ssssss...."
     m "Sayori? Are you alright?"
     s "...ahhhhh..."
@@ -306,18 +311,48 @@
     s "It's good to know that you still care this much. It's just like before."
     mc "Of course I care about you. I know it's been a bit weird, but you're still my best friend."
     "Sayori, smile slowly returns."
+    scene bg club_day
+    show sayori turned at t21
+    show monika forward at t22
     "Monika comes from behind me to check on Sayori."
+    show monika om at f22   
     m "Do you need me to get an ice pack from the nurse's office?"
+    show monika cm at t22
+    show sayori
     "Sayori shakes her head."
+    show sayori om at f21
     s "It's not that serious. I'm fine."
+    show sayori cm at t21
     mc "Are you sure it's okay? Can you move it well?"
+    show sayori om at f21
     s "Yeah, it's nothing! All good!"
+    show sayori cm at t21
     mc "Okay. I'll want to check before we leave just in case a bruise starts to form."
+    show sayori om at f21
     s "Will do."
+    show sayori cm at t21
+    scene bg club_day with wipeleft
+    show monika forward happ oe om lpoint rhip at f11
     m "Okay, everyone!"
+    show monika cm ldown at t42 zorder 1
+    show sayori turned happ  at t41 zorder 1
+    show yuri turned happ at t44 zorder 1
+    show natsuki turned happ at t43 zorder 1
     "We all walk up to Monika for the announcement."
+    show monika om at f42
     m "Sayori has brought the copies of the book we're reading for our activity."
+    show monika cm at t42
+    show sayori at t43 zorder 2
+    "{nw=1}"
+    show sayori at t44 zorder 2
+    "{nw=1}"
+    show sayori at player_perspective
+    "{nw=1}"
+    show sayori at t11
+    "{nw=0.1}"
+    show sayori at t41
     "Sayori starts handing the book out to us. As she hands me the book I read the title: Deadline."
+    
     "As we read the back of the book, it looks to be about a high school student learning that he has a year to live as he starts senior year and the things he wants to get done to feel he's lived life to the fullest."
     "Yuri; I'm quite surprised by this selection for our inaugural activity. I was not expecting such a tension driven narrative."
     m "While the tension can be quite a hook, I really resonated with the idea of living life to the fullest. I'm also hoping you all can find something out of the story as well."

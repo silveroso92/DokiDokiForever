@@ -69,13 +69,13 @@
     with wipeleft
     "I freeze in place momentarily and see a group of other students surrounding a pink haired girl."
     "The taller of the students is holding a book over her head as she tries to jump for it unsuccessfully."
-    show natsuki turned vang ml e4c at t11
+    show natsuki turned vang ml e4c at f44
     qu "Give it back you friggin jerks!!"
-    show natsuki cm e2d b1e
+    show natsuki cm e2d b1e at t44
     st2 "Aww! The cute little baby wants her picture book. What, are regular books too hard?"
     show natsuki mm
     "The small girl grumbles as she swings at one of the students, but they dodge her and push her on the ground near where I'm standing."
-    show natsuki b1b e1g
+    show natsuki b1b e1g at t41
     "She looks up to me with tears beginning to well with a grimace on her face."
     "I look at her and then the group of students. I know two of them are in Elsea's homeroom"
     "I quickly look away and begin to walk away."
