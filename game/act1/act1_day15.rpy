@@ -104,7 +104,7 @@ label act1_day15:
     show agawa at f32
     a "Well, let me introduce myself. My name is Mr. Agawa, and I will be your faculty advisor."
     show agawa at t32
-    show natsuki cross om at f31 with with moveinright
+    show natsuki cross om at f31 with moveinright
     n " Faculty advisor? What's this mean?"
     show natsuki cm at t31 
     mc "Don't tell me you're gonna be in the club meetings as well."
