@@ -553,3 +553,39 @@ init python:
 transform malpha(a=1.00):
     i11
     alpha a
+
+# Define the peek position (adjust xanchor to show more or less of the sprite)
+transform peek_left:
+    xalign 0.0      # Align to the left edge of the screen
+    yalign 1.0      # Sit at the bottom of the screen
+    xanchor 0.6   
+    zoom .75
+    rotate 10  # 40% of the sprite is off-screen to the left
+
+transform peek_right:
+    xalign 1.0      # Align to the right edge of the screen
+    yalign 0.5      # Sit at the bottom of the screen
+    xanchor 0.5     # 60% of the sprite is off-screen to the right
+    zoom .75
+    rotate -10
+
+transform player_perspective:
+    subpixel True
+    # Organically ease into the close-up over 0.6 seconds
+    ease 0.6 zoom 1.0 xalign 0.5 yalign 0.15
+
+transform jitter:
+    linear 0.1 xoffset -3
+    linear 0.1 xoffset 3
+    repeat
+    
+# 1. Define the custom ATL transformation
+transform fall:
+    parallel:
+        # Move the sprite's y-position down off the screen
+        easeout 0.3 ypos 2.5 xpos 2
+    pause 0.1          # Animate over 0.3 seconds
+    parallel:
+        # Rotate from its current angle to 90 degrees
+        easeout 0.3 rotate -125
+

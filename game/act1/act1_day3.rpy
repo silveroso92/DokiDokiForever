@@ -85,50 +85,53 @@ scene bg sayori_yard
 "While she's peering over the gate trying to see where I am, I sneak into whispering distance."
 "..."
 mc "Wannatellmewhatyouredoing-"
-show sayori turned rup ldown pani om oe at t11
+show sayori turned rup ldown pani om oe at f11
 s "GAH!!"
-show sayori rdown lup ce
+show sayori rdown lup ce at t11
 "Sayori jumps in fear and slaps at me."
-show sayori lup angr oe
+show sayori lup angr oe at f11
 s "Why would you do that, you meenie!"
-show sayori cm
+show sayori cm at t11
 mc "Me? I wasn't the one following people."
-show sayori flus om
+show sayori flus om at f11
 s "I wasn't following. I was...observing. From a distance."
+show sayori cm at t11
 mc "Zoo rules. Gotcha"
-show sayori ldown sad 
+show sayori ldown sad om at f11
 s "It's just... I heard about...and I want to make sure you're okay.."
 show sayori ce
 s "I..I just didn't..."
+show sayori oe at t11
 "I put my hand up to her to stop."
 mc "It's okay. I get it. I know I haven't been in the best mind space."
-show sayori worr cm oe
+show sayori worr cm oe 
 mc "But, I'm good now."
 show sayori turned sad cm oe
-
-show sayori om
+pause 1.0
+show sayori om at f11
 s "Are you sure?"
+show sayori cm at t11
 "I give her a light smile."
 mc "No, I'm [player]."
 show sayori neut e2a mf b1e
-
+pause 0.7
 show sayori b1a md
-
+pause 0.5
 show sayori anno cm oe
 "I stand there with a goofy grin on my face."
-show sayori om
+show sayori om at f11
 s "I see you still have your sense of humor."
 show sayori ce
-s "*or lack thereof*"
-show sayori turned dist cm oe
+s "{i}or lack thereof{i}"
+show sayori turned dist oe
 s "So, if it's not too much trouble..." 
 show sayori tap nerv m1
 s "Do you mind if we walk to school together?"
-show sayori m2
+show sayori m2 at t11
 "She stares at me with her puppy dog eyes, trying to play up all the guilt she can."
 "With how my week has gone, I probably need the company."
 mc "Of course. It will be a nice change of pace."
-show sayori turned happ om ce
+show sayori turned happ om ce at f11
 s "YAY!!"
 show sayori rdown ldown
 "She tackles me and begins squeezing until she realizes what she just did."

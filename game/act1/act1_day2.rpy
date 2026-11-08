@@ -175,11 +175,12 @@
     "Crap!"
     "My autopilot brain brought me straight to the art club!"
     "I turn around to go to another exit when-"
-    show natsuki turned ldown rdown pani om ce at f11
+    show natsuki turned ldown rdown pani om ce at player_perspective
+    #show natsuki turned  at player_perspective
     qu "AHH!!"
-    show natsuki cm ce at t11
+    show natsuki cm ce at f11
     "I bump into someone small, knocking the book out of their hand. And they fall on the floor."
-    show natsuki turned angr cm oe
+    show natsuki turned angr cm oe at t11
     mc "AH! Sorry, I didn't see you."
     "I immediately bend down and grab the book on the ground."
     "It's a pink covered manga book with cutesy girls in dramatic poses on the cover."
@@ -187,9 +188,11 @@
     qu "Geez, dude! Watch where you're go-{nw=1.0}"
     show natsuki turned lsur oe cm at t11
     pause 1.0   
+    show natsuki turned vang cm oe at f11
     "As she looks up, I notice it was the same girl who was getting bullied yesterday."
+    show natsuki turned vang cm oe n4 at f11
     "My face goes pale with the realization while she gets red with anger and embarrassment"
-    show natsuki turned vang om ce at f11
+    show natsuki turned vang om ce n4 at f11
     qu "Of course you didn't see me, you prick!"
     show natsuki oe
     qu "Not like you care about anyone but yourself, right?"
@@ -199,10 +202,11 @@
     qu "Don't touch! Your grubby hands are gonna ruin the quality!"
     show natsuki cm at t11
     mc "...I...I'm So-"
-    show natsuki cross fs neut b2 e4
+    show natsuki cross fs neut om b2 e4
     qu "Save it!"
+    show natsuki cross fs neut cm b2 e4
     "She turns around and stomps off."
-    hide natsuki
+    hide natsuki with moveoutright
     "Great."
     "Another eggshell to walk on."
     scene bg residential_day
