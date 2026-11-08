@@ -56,15 +56,27 @@ label act1_day15:
     "Great. Just when I was getting things off my plate."
     scene bg corridor
     "As I approach the clubroom, I see Natsuki and Yuri standing outside the closed door."
-    mc "Hey, what's going on? Is the door locked or something?"
-    n " Sayori stopped us before we got in saying they had to talk to faculty about something. There's a teacher in there with her and Monika right now."
-    mc "Do you think it's something bad?"
-    y "I can not perceive any reason to believe so."
-    n " You don't think they'll cancel the club cus we cut out early, will they?"
-    mc "I hope not."
-    y "It is not like the room was empty. I was here the entire duration of the festival. Though, the lack of follow up from other students may be a factor..."
+    show natsuki turned at t43
+		show yuri turned at t44
+		mc "Hey, what's going on? Is the door locked or something?"
+    show natsuki om at f43
+		n " Sayori stopped us before we got in saying they had to talk to faculty about something. There's a teacher in there with her and Monika right now."
+    show natsuki cm at t43
+		mc "Do you think it's something bad?"
+    show yuri om at f44
+		y "I can not perceive any reason to believe so."
+    show yuri cm at t44
+		show natsuki om at f43
+		n " You don't think they'll cancel the club cus we cut out early, will they?"
+    show natsuki cm at t43
+		mc "I hope not."
+    show yuri om at f44
+		y "It is not like the room was empty. I was here the entire duration of the festival."
+		y "Though, the lack of follow up from other students may be a factor..."
+		show yuri cm at t44
     "As we sit in silence and suspense, we can faintly hear the others in the room."
     s "Okay, I'll get them now."
+		show sayori turned happ at t41
     "As the doors open her bright face grows one of concern."
     s "Woah, guys. What's wrong?"
     n " Why are you asking us? You're the one with the inside knowledge."
