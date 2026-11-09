@@ -198,7 +198,7 @@ show sayori worr om ce
 s "She was just saying how you turned into such a delinquent and I knew it wasn't like that so I-"
 show sayori flus cm oe at t11
 pause 0.3
-show sayori at hop
+show sayori at dip
 "I place my hand on her shoulder and she jumps a little."
 show sayori neut e2a b1f mf
 mc "Thank you."
@@ -211,50 +211,52 @@ show sayori shoc om oe
 pause 0.5
 show sayori happ oe om at f11
 s "Yeah. It was Soooo yummy last night. And it always tastes better the next day!"
-show sayori lsur oe cm
+show sayori lsur oe cm at t11
 s "!"
-show sayori tap nerv oe om
+show sayori tap nerv oe om at f11
 s "I take it my mom took my suggestion."
+show sayori cm at t11
 mc "I figured as much. Food was always our love language."
 show sayori  n3
-"Sayori blushes"
+pause 0.3
+show sayori om at f11
 s "Yeah, I guess it is..."
-show sayori cm
+show sayori cm at t11
 "We walk in a comfortable yet awkward silence for a while."
 scene bg school
 show sayori turned neut cm oe at t11
 "As we approach I take a look at my phone and see the detour with Sayori took a bit longer than expected."
 "I don't think I'll have to work on anything before class starts."
 "Sayori sees the slight shift in my demeanor."
-show sayori om oe
+show sayori om oe at f11
 s "Is everything okay?"
-show sayori cm
+show sayori cm at t11
 mc "Oh, yeah. Just thought I would have time to get some homework done before class."
-show sayori sad 
-"Sayori looks at me with a frown."
-show sayori om oe
+show sayori sad om oe at f11
 s "I didn't know you had to catch up with an assignment? I knew I shouldn't have-"
-show sayori worr om oe
+show sayori worr om oe at t11
 mc "No, no. It's not that. I have my work already done. It was just some make-up stuff."
 "I look at her and can see the worry build up."
+show sayori cm
 "It reminds me of the days on the playground whenever I would fall doing something dangerous."
 "She's always been there to look out for me."
 "Even when I didn't notice."
-show sayori sad om oe
+show sayori sad om oe at f11
 s "Will you be able to get it done before it's due? I can try to talk to the teacher for you."
-show sayori cm
+show sayori cm at t11
 mc "That's sweet, but not needed. I have until next Monday, so I should be good."
-show sayori worr cm oe
-"Sayori sighs."
-show sayori neut mb e1a b1b
+show sayori worr cm oe at sink
+pause 0.5
+show sayori neut mb e1a b1b at f11
 s "Well that's good to hear. If you need help, don't hesitate to ask."
 show sayori happ om oe
 s "We can have a little study session together."
-show sayori cm oe
+show sayori cm oe at t11
 "I smile at Sayori."
 mc "Yeah. I'll keep that in mind. Thanks."
-show sayori turned happ rup lup ce om
+show sayori turned happ rup lup ce om at f11
 s "Anytime!"
+show sayori cm at t11
 "As we head into the school, we give each other our goodbyes and head to our respective classes."
 scene bg class_day
 "As I make my way to class, I realize how much better I feel."
@@ -301,16 +303,17 @@ mc "Did you hurt your head?"
 qu "Oh, no I'm.."
 qu "heh..."
 qu "Just a little embarrassed."
-show monika forward ldown rdown lsur om ce at t11
+show monika forward ldown rdown lsur om ce at f11
 qu "No need to-"
-show monika vsur om oe n3
+show monika vsur om oe n3 at t11
 "As she looks up at me, my eyes meet with hers and their familiar emerald gleam leaves me stunned"
 "It's Monika."
 "As I stand stunned, I'm not sure how to react."
 "I mean we're not really in the same social circle."
+show monika om at f11
 m "O..Oh my goodness."
 show monika forward neut b1b e1a mi n2
-m "I'm sorry [player], I was in such a hurry, I..I usually don't-"
+m "I'm sorry [player], I was in such a hurry, I..I usually don't-{nw=2}"
 "Wait. She knows my name?"
 "Now that I think about it, I think she and Elsea were in a few clubs together."
 show monika forward nerv oe om n2
@@ -319,71 +322,66 @@ show monika neut om oe
 "In Monika's defense, Elsea was complaining about this in debate club."
 show monika forward flus om oe
 "Wait..."
-show monika neut cm oe
+show monika neut cm oe at t11
 "Has...has Monika been talking to me this entire time?"
 show monika n2
 "And now she stopped."
 "Uhhh..."
 show monika n1 oe cm
 "She is starting to get a concerned look on her face"
-show monika forward sad oe om
+show monika forward sad oe om at f11
 m "[player], are you okay?"
-show monika oe cm
+show monika oe cm at t11
 "Don't just stand there like an idiot! Say something!"
 mc "Uhhh..I uh, I mean..uh..."
 show monika happ cm ce
-"Monika then sighs and smiles at me."
-show monika oe om
-m "*giggle* Well, glad you're okay."
+pause 0.3
+show monika oe om at f11
+m "*giggle* Well, glad you're okay." 
 m "Sorry, but I am running late to a club meeting, hopefully we run into each other again."
 show monika neut e1f mb
 m "But less literally, I hope!"
-show monika happ cm oe
+hide monika happ cm oe with moveoutright
 "As she walks past,I put my head to the back of my head and give a goofy smile."
 mc "Uh, yeah. Good luck in debate."
-show monika vsur oe cm
-m "stops and turns back around with a bit of an inquisitive look on her face."
-show monika forward happ om oe
+show monika vsur oe cm at t11
+pause 0.7
+show monika forward happ om oe at f11
 m "Actually I'm no longer in debate."
-show monika oe cm
+show monika oe cm at t11
 mc "Really? I heard you were really good."
 show monika cm ce   
-"Monika gives a light smile."
-show monika neut mi e1a
+pause 0.5
+show monika neut mi e1a at f11
 m "To be honest, it wasn't the debating, but the politics and drama. Too much gossip, spite, and tiptoeing around others."
 show monika happ om oe
 m "I needed a place where that wasn't much of a factor. A sort of safe haven for those who need an escape."
 show monika lpiont rhip happ om oe
 m "That's why I created my own club. The Literature Club!"
-
 m "There, the members are free to pursue their literary passions, no matter what they are."
-show monika ldown happ cm oe
+show monika ldown happ cm oe at t11
 mc "Literature, huh? That sounds...uh"
-show monika om oe
+show monika om oe at f11
 m "I know it may not sound like the most exciting thing, but I assure you, the concept of literature is quite vast."
-show monika cm oe
+show monika cm oe at t11
 "I try to think of what she can even mean, but it just sounds like a fancy book club."
-
+show monika at player_perspective
 "Just then, Monika walks closer to me, almost like she was reading my mind"
-show monika lpoint oe om
+show monika lpoint oe om at f11
 m "Actually, if you're not too busy, I'd like you to come visit and see what it's all about."
-show monika cm
+show monika cm t11
 "Did..did Monika just invite me to her club?"
-
 "I mean, it's not like I'm doing anything else after school."
-
 "And I'd probably need the distraction."
-
 "But do I really want to join a Literature club?"
-
 mc "I'd love to..."
-show monika neut rdown ldown oe cm
+show monika neut rdown ldown oe cm 
 mc "But I was kinda trying to meet with someone"
-
-"Monika frowns."
 show monika mb e1a b1b
+pause 0.5
+show monika om at f11
 m "Oh, that's too bad. Maybe we ca-"
-show monika forward ysur cm oe
+show monika forward ysur cm oe at hop
 qu "HEY [player]!!!"
 "Monika is interrupted by the yelling down the hall"
 "I peek around her and see Sayori running towards me waving her arms to get my attention."
@@ -393,19 +391,28 @@ qu "HEY [player]!!!"
 show monika neut cm oe at t21
 show sayori turned neut lup rup n2 mq e4c at t22
 "I look at her with a bit of embarrassment, but I can't tell if it's for her or for myself as others are starting to stare and talk."
+show sayori at f22
 s "[player]..."
-show sayori turned pani cm ce
+show sayori turned pani cm ce at t22
+pause 0.2
+show sayori om at f22
 "Sayori:*huff*"
-show sayori om
-s "I finally"
-show sayori cm
+show sayori at t22
+pause 0.2
+show sayori om at f22
+s "I finally...
+show sayori cm at t22
+pause 0.2
+show sayori om at f22
 s "*gasp*"
-show sayori om
+show sayori cm at t22
+pause 0.2
+show sayori om at f22
 s "FOUND YOU!!"
 show monika rhip laug cm ce
-show sayori pani cm ce
+show sayori pani cm ce t22
 "Monika looks at both me and Sayori and starts giggling to herself."
-show monika neut mb e1a b1b
+show monika neut mb e1a b1b at f21
 m "It's okay, Sayori. I was able to ask him."
 m "Unfortunately, he said he's busy. We can just start the meeting as usual."
 show monika ma
