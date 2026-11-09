@@ -226,14 +226,14 @@ show sayori cm at t11
 scene bg school
 show sayori turned neut cm oe at t11
 "As we approach I take a look at my phone and see the detour with Sayori took a bit longer than expected."
-"I don't think I'll have to work on anything before class starts."
+"I don't think I'll have time to work on anything before class starts."
 "Sayori sees the slight shift in my demeanor."
 show sayori om oe at f11
 s "Is everything okay?"
 show sayori cm at t11
 mc "Oh, yeah. Just thought I would have time to get some homework done before class."
 show sayori sad om oe at f11
-s "I didn't know you had to catch up with an assignment? I knew I shouldn't have-"
+s "I didn't know you had to catch up with an assignment? I knew I shouldn't have-"{nw=3}
 show sayori worr om oe at t11
 mc "No, no. It's not that. I have my work already done. It was just some make-up stuff."
 "I look at her and can see the worry build up."
@@ -415,47 +415,48 @@ show sayori pani cm ce t22
 show monika neut mb e1a b1b at f21
 m "It's okay, Sayori. I was able to ask him."
 m "Unfortunately, he said he's busy. We can just start the meeting as usual."
-show monika ma
+show monika ma at t21
 "Wait, we?"
 mc "Wait, what?"
-show sayori lsur oe cm
+show sayori lsur oe cm 
 "Sayori looks up at me as she finally catches her breath."
-show sayori neut n1 om oe
+show sayori neut n1 om oe at f22
 s "I forgot to ask you this morning, but I was gonna invite you to the literature club."
 show monika forward neut oe cm
-show sayori curi om oe
+show sayori curi cm oe at t22
+pause 1.0
+show sayori at f22
 s "Wait...you two know each other?"
-show sayori worr oe cm
-"Sayori's demeanor changes as if she's a bit upset about this."
-show monika happ oe om
+show sayori worr oe cm at t22
+show monika happ oe om at f21
 m "Oh, yeah. I've seen him around." 
 show monika neut n2 mh e2b b1ashow sayori curi cm oe
 m "You know, a, well...friend of a...friend."
-show monika n1 md
+show monika n1 md at t21
 "That look and tone Monika just took tells me she's very aware of the breakup."
 "To be honest, I'd be more surprised if she didn't."
 "I look at Sayori as she looks between me, Monika, and the floor like she's piecing it together."
-show sayori lup sad oe cm
+show sayori lup sad oe cm 
 "Aaand she just got it."
 "Great."
 "Now this is awkward."
 "Sayori decides to break the tension."
-show sayori nerv om oe
+show sayori nerv om oe at f22
 s "S..so, what were you busy with [player]?"
-show sayori cm
+show sayori cm at t23
 mc "Huh? Oh!"
 mc "To be honest, I was looking for you to see if you wanted to walk home together."
-show monika ysur oe cm
+show monika ysur oe cm 
 show sayori ldown lsur oe cm
-
+pause 1.0
 show monika rdown curi cm oe
-show sayori turned curi om oe
+show sayori turned curi om oe at f22
 s "Wait. If you were wanting to walk home with me..."
-show monika om
-show sayori cm
+show monika om at f21
+show sayori cm at t22
 m "...and you won't be leaving until after literature club.."
-show monika happ cm oe
-show sayori rup lup e4b b1a mo
+show monika happ cm oe at t21
+show sayori rup lup e4b b1a mo at f22
 s "THAT MEANS [player] CAN JOIN US!!"
 show monika m ce om
 show sayori rup lup e4b b1a mo
