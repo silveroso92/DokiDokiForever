@@ -1,4 +1,6 @@
 ﻿label act1_day1:
+    
+    call phone_call_test
     stop music fadeout 5.0
     
     "Day 1: Monday" 
