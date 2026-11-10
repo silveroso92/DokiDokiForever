@@ -6,10 +6,16 @@ default pc_yuri    = phone.character.Character("Yuri", phone.asset("yuri_icon.pn
 default pc_monika  = phone.character.Character("Monika", phone.asset("monika_icon.png"), "m", 40, "#0a0")
 default pc_natsuki= phone.character.Character("Natsuki", phone.asset("natsuki_icon.png"), "n", 45, "#fbb")
 default pc_elsea =  phone.character.Character("Elsea", phone.asset("natsuki_icon.png"), "e", 50, "#b60505")
+default pc_mom =  phone.character.Character("Mom", phone.asset("natsuki_icon.png"), "mom", 50, "#b60505")
+default pc_dad =  phone.character.Character("Dad", phone.asset("natsuki_icon.png"), "dad", 50, "#b60505")
 
 default pov_key = "[player]"
 
 define phone_s  = Character("Sayori", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
+define phone_mom  = Character("Mom", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
+define phone_m  = Character("Monika", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
+define phone_d  = Character("Dad", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
+
 
 init 100 python in phone.application:
     add_app_to_all_characters(message_app)
@@ -58,5 +64,27 @@ label phone_call_test:
     "Why is she always this energetic?"
     phone end call
     "..."
+
+    return
+
+label phone_mom_day02_1:
+    phone call "mom"
+    phone_mc "What is it?"
+    phone_mom "What do you think you are doing??"
+    "My heart drops"
+    phone_mc "...w..what?"
+    "I look at the caller ID."
+    "Crap"
+    phone_mom "You heard what I said. Why are you not in school? We just got a call that you never showed up for your homeroom! And what's this about falling asleep in class?"
+    phone_mc "...."
+    phone_mom "Well? Are you gonna say something or just sit there being silent?"
+    "All the frustration begins to well up and I start choking on my words."
+    phone_mc "..I, I just can't...keep..."
+    phone_mom "You are too old to be trying to pull this crap. Do you really think you and Elsea will have any sort of future if you keep acting like this? Get to school! NOW!"
+    phone_mc "You...don't know-"
+    phone_mom "Know what?"
+    phone_mc "...of course you don't. That would require you to be here."
+    phone_mom "...WHAT?? WHO DO YOU THINK YOU-{nw=2}
+    phone end call
 
     return
