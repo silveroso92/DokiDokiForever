@@ -117,3 +117,10 @@ label_phone_dad_day03_1:
     phone end call
 
     return
+
+    
+    d "Sayori's mom told us about Elsea. Sorry to hear about that kiddo."
+    d "I understand your wounds are still fresh and this is a big change, so I was able to talk to your mother to give a bit of leniency from what happened this morning, but that doesn't excuse you from responsibilities."
+    d "You're almost an adult. You won't be able to run away from your problems. Focus on your school right now so you don't ruin your future. "
+    d "We're here if you need to talk. "
+    d "Love you."
