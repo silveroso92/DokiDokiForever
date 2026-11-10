@@ -222,3 +222,5 @@ init 1500:
 
 # previous name, when the function it's used in was undocumented
 default -1000 phone._id_ran_on_start = set()
+
+define PhoneReturn = phone.PhoneReturn

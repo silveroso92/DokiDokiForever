@@ -4,12 +4,12 @@ default pc_sayori  = phone.character.Character("Sayori", phone.asset("sayori_ico
 default pc_mc      = phone.character.Character("MC", phone.asset("mc_icon.png"), "mc", 35, "#484848")
 default pc_yuri    = phone.character.Character("Yuri", phone.asset("yuri_icon.png"), "y", 20, "#a327d6")
 default pc_monika  = phone.character.Character("Monika", phone.asset("monika_icon.png"), "m", 40, "#0a0")
-default pc_natsuki = phone.character.Character("Natsuki", phone.asset("natsuki_icon.png"), "n", 45, "#fbb")
+default pc_natsuki= phone.character.Character("Natsuki", phone.asset("natsuki_icon.png"), "n", 45, "#fbb")
+default pc_elsea =  phone.character.Character("Elsea", phone.asset("natsuki_icon.png"), "e", 50, "#b60505")
 
-default pov_key = "mc"
+default pov_key = "[player]"
 
 define phone_s  = Character("Sayori", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
-define phone_mc = Character("MC", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
 
 init 100 python in phone.application:
     add_app_to_all_characters(message_app)
@@ -21,13 +21,14 @@ init 100 python in phone.calendar:
 
 init phone register:
     define "Welcome":
-        add "s" add "mc" add "y" add "m" add "n"
+        add "s" add "mc" add "y" add "m" add "n" add "e"
         icon phone.asset("default_icon.png")
         as thanks_for_using_my_framework key "ddu"
 
+
 label phone_discussion_test:
     phone discussion "ddu":
-        time year 2023 month 6 day 5 hour 16 minute 30 delay -1 # exact date and time at which i wrote this. yes i am feeling quite silly and goofy
+        time year 2027 month 6 day 5 hour 16 minute 30 delay -1 # exact date and time at which i wrote this. yes i am feeling quite silly and goofy
         label "'Sayori' has been added to the group" delay -1
         label "'MC' has been added to the group" delay -1
         label "'Yuri' has been added to the group" delay -1
@@ -53,7 +54,7 @@ label phone_discussion_test:
 label phone_call_test:
     phone call "s"
     phone_s "Ohayouuu!!!!!!!!!!!!!!!!"
-    phone_mc "Hey!"
+    phone_s "Hey!"
     "Why is she always this energetic?"
     phone end call
     "..."

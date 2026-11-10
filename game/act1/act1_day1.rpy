@@ -1,6 +1,5 @@
 ﻿label act1_day1:
     
-    call phone_call_test
     stop music fadeout 5.0
     
     "Day 1: Monday" 
@@ -14,9 +13,9 @@
     
     "I stare at the ceiling while laying in my bed as my phone's alarm blares."
     stop sound
-            
+          
     "After a while I turn towards it to turn off the alarm, revealing my home screen with the latest notification."
-    "I'm sorry we couldn't make this work..."
+    call break_up_text
     #[a phone screen image that's interactable. Contents will be discussed]
     "Elsea..."
     "Two years of my life. Gone like that."

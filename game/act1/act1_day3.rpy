@@ -233,7 +233,7 @@ s "Is everything okay?"
 show sayori cm at t11
 mc "Oh, yeah. Just thought I would have time to get some homework done before class."
 show sayori sad om oe at f11
-s "I didn't know you had to catch up with an assignment? I knew I shouldn't have-"{nw=3}
+s "I didn't know you had to catch up with an assignment? I knew I shouldn't have-{nw=3}"
 show sayori worr om oe at t11
 mc "No, no. It's not that. I have my work already done. It was just some make-up stuff."
 "I look at her and can see the worry build up."
@@ -400,7 +400,7 @@ show sayori om at f22
 show sayori at t22
 pause 0.2
 show sayori om at f22
-s "I finally...
+s "I finally..."
 show sayori cm at t22
 pause 0.2
 show sayori om at f22

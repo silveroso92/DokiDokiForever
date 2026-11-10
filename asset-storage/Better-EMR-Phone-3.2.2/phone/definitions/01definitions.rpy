@@ -9,7 +9,7 @@ default pc_natsuki = phone.character.Character("Natsuki", phone.asset("natsuki_i
 default pov_key = "mc"
 
 define phone_s  = Character("Sayori", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
-define phone_mc = Character("MC", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
+define phone_m = Character("Monika", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
 
 init 100 python in phone.application:
     add_app_to_all_characters(message_app)
@@ -24,6 +24,15 @@ init phone register:
         add "s" add "mc" add "y" add "m" add "n"
         icon phone.asset("default_icon.png")
         as thanks_for_using_my_framework key "ddu"
+    
+        
+label break_up_text:
+    phone discussion "but":
+        time year 2027 month 6 day 5 hour 16 minute 30 delay -1
+        label "'Elsea' has been added to the group" delay -1
+        "e" "I'm sorry we couldn't make this work" delay 10
+    phone end discussion
+    return
 
 label phone_discussion_test:
     phone discussion "ddu":
@@ -53,7 +62,7 @@ label phone_discussion_test:
 label phone_call_test:
     phone call "s"
     phone_s "Ohayouuu!!!!!!!!!!!!!!!!"
-    phone_mc "Hey!"
+    phone_m "Hey!"
     "Why is she always this energetic?"
     phone end call
     "..."
