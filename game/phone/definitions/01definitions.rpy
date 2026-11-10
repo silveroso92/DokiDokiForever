@@ -88,3 +88,32 @@ label phone_mom_day02_1:
     phone end call
 
     return
+
+label_phone_dad_day03_1:
+    phone call "dad"
+    phone_mc "I'm here! I'm here!"
+    phone_dad "So you haven't gone deaf. Good to know."
+    phone_mc "What's up?"
+    phone_dad "Just making sure that 'what' is you. We don't want to hear about any truancy today so I figured I'd give you a wake up call."
+    "And what if I would have just turned my phone off?"
+    phone_dad "In case you were thinking about turning your phone off, we would have called your neighbor again to give you a bit of motivation."
+    phone_add "And I personally would give her that bounty. Dead or alive."
+    "*gulp*"
+    phone_mc "... I wasn't going to skip today, okay? I'm fully aware of the stakes."
+    phone_dad "You better be. You need to start watching out for yourself. While we may be your safety net now, we're not gonna just hold you. We'll fling you back into it."
+    phone_dad "Remember, we're not gonna be here forever. That goes for everyone. So you need to prepare to hold your own weight."
+    phone_mc "Yeah. I know..."
+    phone_d "Okay. You should have time to make yourself some breakfast, so do that and don't skip it. Based on your behavior yesterday I take it you didn't eat much, did you?"
+    phone_mc "Wait. How did you-{nw=2}
+    phone_dad "Call it 22 years experience."
+    phone_mc "But I'm 18..."
+    phone_dad "And the second one I have to live with who gets like that."
+    phone_mom "What was that?"
+    phone_dad "I said you order breakfast yet?"
+    phone_mom "*grumble*"
+    "I chuckle for the first time in days"
+    phone_dad "I gotta go. Get some food and go to school."
+    phone_mc "Yeah. Will do."
+    phone end call
+
+    return
