@@ -12,7 +12,7 @@ label act1_day6:
     "Absolutely nothing."
     "Oh yeah. I needed to get groceries."
     "I dig through the cabinets and find a couple of granola bars that I snack on as a type of list on my phone. As I'm typing, I get a message from Sayori"
-    call 
+    call sayori_text_day06_1
     "I chuckle to myself as I grab my reusable bags and head out."
     scene bg house
     "As I approach Sayori's house, I reach for the door knob to let myself in, but stop myself."
@@ -22,7 +22,7 @@ label act1_day6:
     "I Stop myself again. "
     "But that was before. Things are different now. We aren't that close anymore. Are we?"
     "As I stand there frozen, the door opens, snapping me out of my trance. It opens to Sayori's mom standing in front of me."
-    "Sayori's mom: Why, hello [player]. This is a pleasant surprise!"
+    sm "Why, hello [player]. This is a pleasant surprise!"
     "I grow pale from the confrontation. I'm still embarrassed from Tuesday."
     mc "Uh, yeah. Hi. I uhh, came to take Sayori out."
     "Sayori's mom lifts her eyebrow and grows a sly smirk on her face."
@@ -55,7 +55,7 @@ label act1_day6:
     mc "Yeah...Again. Sorry."
     sm "Don't be sorry. Be better."
     "I sit there for a bit and reflect on that."
-    "Sayori's mom: So, what food are you getting? You have a list or are you just winging it?"
+    sm "So, what food are you getting? You have a list or are you just winging it?"
     mc "No, I have a list."
     sm "Do you mind if I take a look."
     mc "Uh...sure."
@@ -73,8 +73,11 @@ label act1_day6:
     mc "Thanks. This means a lot!"
     sm "No problem. Heck, half way returning the favor. Can't tell you how often you and yours watched out for Sayori. Plus half of these came from your mom."
     "I hear the closing of the door and clomping down the stairs to reveal a winded looking Sayori."
+    show sayori turned happ lup rup or om at f22
     s "I'm here! I'm Ready!"
-    "Sayori's mom: What did you have to find?"
+    show sayori at t11
+    sm "What did you have to find?"
+    show sayori tap om at f11
     s "Eh heh..my wallet..."
     "As we head out the house, Sayori gives her mom a hug and kiss on the cheek."
     s "See ya Mom!"
