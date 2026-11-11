@@ -128,10 +128,25 @@ label phone_dad_day03_1:
     phone end call
 
     return
+label sayori_text_day06_1:
+    phone discussion "ddu":
+        "s" "Hey! Get any progress yesterday? [Add phone screen here with the text]"
+        "I remember on our walk home that I told her my plan of barreling through the rest of my homework. I figured at the time it was the easiest thing to open up to her about."
+        "mc" "Yeah. I got basically all of it done. Just got my post school roadmap to do."
+        "s" "Cool Beans! : )"
+        "s" "So Whatcha got planned today?"
+        "mc" "I gotta get groceries. Ran out of food."
+        "As I sit there and go back to thinking of food to add, it hits me: Sayori most likely wants to hang out today. "
+        "Sure, we spend time in the club and on walks, but we haven't really done anything outside of school together in a while."
+        "mc" "Hey, would you want to head out with me to the store? We can take a few detours on the way there. I was planning on heading out soon anyway."
+        "s" "Yeah! I'll be ready in a bit! You can come over whenever!!"
+        "mc" "Great! See you in a few."
+        "s" "See ya!! :D"
+    phone discussion end
+    return
 
-    
 #    d "Sayori's mom told us about Elsea. Sorry to hear about that kiddo."
 #    d "I understand your wounds are still fresh and this is a big change, so I was able to talk to your mother to give a bit of leniency from what happened this morning, but that doesn't excuse you from responsibilities."
 #    d "You're almost an adult. You won't be able to run away from your problems. Focus on your school right now so you don't ruin your future. "
 #    d "We're here if you need to talk. "
-#    d "Love you." 
+#    d "Love you."
