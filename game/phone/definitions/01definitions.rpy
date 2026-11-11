@@ -28,7 +28,7 @@ init 100 python in phone.calendar:
 
 init phone register:
     define "Welcome":
-        add "s" add "mc" add "y" add "m" add "n" add "e"
+        add "s" add "mc" add "y" add "m" add "n" add "e" add "d" add "mom"
         icon phone.asset("default_icon.png")
         as thanks_for_using_my_framework key "ddu"
 
