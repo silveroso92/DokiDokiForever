@@ -1,4 +1,4 @@
-label act1_day2:
+﻿label act1_day2:
     "Day 2: Tuesday"
     show bg black
     #[Dream Sequence] [This sequence will be coded with sprites and background images. Maybe a CG]
@@ -70,23 +70,7 @@ label act1_day2:
     "*RIING RIING RIING*"  ##[Phone ring sound bit]
     "My phone keeps going off. Elsea probably passed my number out and her friends are spamming me."
     "I don't even look at my phone as I randomly tap to answer. It's not like those morons can come up with anything clever"
-    mc "What is it?"
-    qu "What do you think you are doing??"
-    "My heart drops"
-    mc "...w..what?"
-    "I look at the caller ID."
-    "All the calls were from either mom or dad."
-    $ mom_name = "Mom"
-    mom "You heard what I said. Why are you not in school? We just got a call that you never showed up for your homeroom! And what's this about falling asleep in class?"
-    mc "...."
-    mom "Well? Are you gonna say something or just sit there being silent?"
-    "All the frustration begins to well up and I start choking on my words."
-    mc "..I, I just can't...keep..."
-    mom "You are too old to be trying to pull this crap. Do you really think you and Elsea will have any sort of future if you keep acting like this? Get to school! NOW!"
-    mc "You...don't know-"
-    mom "Know what?"
-    mc "...of course you don't. That would require you to be here."
-    mom "...WHAT?? WHO DO YOU THINK YOU-"
+    call phone_mom_day02_1
     "I hang up the phone and shut it off as the tears roll down my eyes."
     "What the hell!??"
     "Why can't the world just leave me alone!!??"

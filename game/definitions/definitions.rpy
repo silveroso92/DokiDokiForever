@@ -1984,6 +1984,7 @@ default st3_name = "Student 3"
 default c_name = "Cashier"
 default mcs_name = "[player] and Sayori"
 default nd_name = "Natsuki's Dad"
+
 # Poem Variables
 # This section stores a character's appeal towards the player's poem and poem winner.
 # For DDLC, since there are three poems written, each character has three values
