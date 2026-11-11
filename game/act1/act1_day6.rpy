@@ -1,4 +1,4 @@
-﻿label act1_day6:
+label act1_day6:
     scene bg black
     "Sunday"
     scene bg bedroom
@@ -12,20 +12,7 @@
     "Absolutely nothing."
     "Oh yeah. I needed to get groceries."
     "I dig through the cabinets and find a couple of granola bars that I snack on as a type of list on my phone. As I'm typing, I get a message from Sayori"
-    s "Hey [player]! Get any progress yesterday? [Add phone screen here with the text]"
-    "I remember on our walk home that I told her my plan of barreling through the rest of my homework. I figured at the time it was the easiest thing to open up to her about."
-    mc "Yeah. I got basically all of it done. Just got my post school roadmap to do."
-    s "Cool Beans! : )"
-    s "So Whatcha got planned today? "
-    mc "I gotta get groceries. Ran out of food."
-    "As I sit there and go back to thinking of food to add, it hits me: Sayori most likely wants to hang out today. "
-    "Sure, we spend time in the club and on walks, but we haven't really done anything outside of school together in a while."
-    mc "Hey, would you want to head out with me to the store? We can take a few detours on the way there. I was planning on heading out soon anyway."
-    "..."
-    "..."
-    s "Yeah! I'll be ready in a bit! You can come over whenever!!"
-    mc "Great! See you in a few."
-    s "See ya!! : D"
+    call 
     "I chuckle to myself as I grab my reusable bags and head out."
     scene bg house
     "As I approach Sayori's house, I reach for the door knob to let myself in, but stop myself."
