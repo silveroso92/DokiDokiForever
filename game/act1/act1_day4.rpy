@@ -1,4 +1,4 @@
-﻿label act1_day4:
+label act1_day4:
         
     "Thursday"
 
@@ -71,29 +71,42 @@
     a "Well, that's all I had for you. Keep up the good work."
     mc "Will do!"
     "I get up and head to the clubroom."
+
     scene bg corridor
     "I basically jogged to the clubroom after leaving class."
     "I know they were worried about me not showing up, and I don't want to free those fears."
     scene bg club_day
     "As I reach the open door, the first person I see is Yuri, already reading her book in the front row."
     "I look around and Sayori is at the teachers desk talking to Monika while Natsuki is sitting on the floor in the back under the window."
+    show yuri turned happ at t11
     "As I walk in, Yuri is the first to notice me."
-    show yuri turned at t11
+    show yuri turned happ om at f11
     y "Oh! [player]! Glad to see you return!"
+    show yuri cm at t11
     mc "Glad to see you too, Yuri."
+    show yuri om at f11
     y "I must say, I am quite relieved in your resolve to stay. I was hoping that your announcement yesterday was genuine."
+    show yuri cm at t11
     mc "Why wouldn't it be? I meant it when I said how comfortable this club is."
     mc "It's the least I can do to make it official."
     "Yuri smiles at my response."
     "That smile is short-lived as we both hear something quick incoming..."
-    show yuri turned at t22
-    show sayori turned at t21
+    show yuri turned sup at t22
+    show sayori happ ce om turned at player_perspecive
     s "[player]!!!!!!"
+    show sayori cm
     "The next thing I know I'm caught in Sayori's vice grip."
+    show sayori om
     s "YOURE HERE YOURE HERE YOURE HERE!!!"
-    mc "ACK!! Yeah...*gasp [player]:...where..else...would I..."
+    show sayori cm
+    mc "ACK!! Yeah...*gasp*"
+    mc "...where..else...would I..."
+    "...."
     mc "..please...let...gooo...."
-    "Sayori snaps back to reality and immediately lets go."
+    show sayori curi oe om
+    show sayori at t21
+    
+    
     s "Hehhee...sorry."
     y "Hee hee hee!"
     y "My, it is quite an experience to see the stories and not just hear them."
