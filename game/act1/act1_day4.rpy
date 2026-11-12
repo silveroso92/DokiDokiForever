@@ -104,77 +104,114 @@ label act1_day4:
     "...."
     mc "..please...let...gooo...."
     show sayori curi oe om
+    pause 1.0
     show sayori at t21
-    
-    
+    pause 0.3
+    show sayori tap om at f21
     s "Hehhee...sorry."
-    y "Hee hee hee!"
+    show sayori cm at t21
+    show yuri ce cm at f22
+    y "Fufufufu.."
+    show yuri oe om 
     y "My, it is quite an experience to see the stories and not just hear them."
+    show yuri cm at t22 
     mc "Huh? What stories?"
+    show yuri om at f22
     y "Sayori has always regaled us with tales of your youthful encounters."
     y "Some of which include her besting you physically."
+    show yuri cm at t22
+    show sayori
     "I turn to Sayori with a stoned face."
     mc "Is that so..."
+    show sayori om at f21
     s "I mean...not all of them..."
+    show sayori cm at t21
+    show yuri om at t22
     y "That is true. She has also informed you of your more nurturing actions whenever she became injured in her gallivanting."
     y "As well as your protective streak of her."
+    show yuri cm at t22
     "I sit there in shock as my face softens up towards Sayori."
     "Even after all this time, she still thinks of the good in me."
+    show sayori ce with sink
     "I reach out and put my hand on her head."
+    show sayori om
     s "Hey! What are you doing?"
+    show sayori cm
     mc "Just showing appreciation. Now that I think of it, it's kinda endearing that you get so excited."
+    show yuri om at f22
+    show sayori at t21
     y "Indeed it is!"
+    show sayori om at f21
+    show yuri cm at t22
     s "Aw, shucks. You guys..."
+    show sayori turned lup rup oe om
     s "I mean how can I NOT be excited? Not only is [player] part of the club, but the club is now an OFFICIAL club!"
+    show sayori ldown
     s "And on top of that, Natsuki brought cupcakes for the occasion!"
     show yuri turned at t33
     show sayori turned at t32
-    show natsuki turned at t31
+    show natsuki cross angr om at f31 with moveinright
     n "NO I DIDN'T!!"
-    "Everyone is caught off guard by her sudden outburst."
-    "Natsuki makes her way to the rest of the group."
+    show natsuki cm at t31
     mc "So you didn't make cupcakes?"
-    "Natsuki begins to scowl at me."
+    show natsuki om at f31
     n "I did, but not for YOU!"
+    show natsuki
     n "It was for all of us. To celebrate the club being official."
+    show natsuki
     n "If any other warm body came before you, the outcome would've been the same."
+    show natsuki cm at t31
     mc "Gee. Thanks for the clarification."
-    "Natsuki turns her attention to Sayori."
-    n "Why are you going around blabbing about MY cupcakes anyway? They were supposed to be a surprise for everyone."
+    show natsuki om at f31
+    n "Why are you going around blabbing about MY cupcakes anyway, Sayori? They were supposed to be a surprise for everyone."
+    show natsuki cm at t31
+    show sayori om at f32
     s "But how can I not get excited about your cute little kitty cakes?"
+    show sayori cm at t32
     mc "Uh..kitty cakes?"
-    n "What the? How did you-"
-    hide natsuki
+    show natsuki om at f32
+    n "What the? How did you-{nw=1}"
+    hide natsuki with moveoutleft
     "She runs to the closet and begins rummaging."
     "..."
     n "SAYORI!!!"
     show yuri turned at t43
-    show sayori turned at t44 
+    hide sayori with moveoutright 
     "Sayori quickly hops behind me once she hears her name."
     "It's no different from the times she would get caught sneaking snacks when we were younger."
     "I sigh and put my hand on my head."
     mc "Sayori, why would you sneak a cupcake? You knew you were getting one."
+    show sayori turned om at peek_right
     s "It's not my fault! Natsuki made them too tempting."
-    show natsuki turned at t41
+    show natsuki turned rhip lhip om at f41
     n "Geez. Maybe [player] joining isn't a good idea if this is how you're gonna start acting."
+    show natsuki cm at t41
     mc "Wait, I'm getting blamed for this too?"
-    "Sayori steps out from behind me."
     show yuri turned at t44
-    show sayori turned at t43
+    show sayori turned om at f43
     s "That's not fair, Natsuki."
+    show sayori cm at t43
+    show natsuki om at f41
     n "Neither is going through my stuff to steal food!"
+    show natsuki
     n "Food that you were already going to be getting, I might add."
-    "Sayori looks down at the floor."
+    show sayori sad om with sink
     s "I'm sorry, Natsuki. I guess I got a bit too excited for things and got carried away."
+    show sayori at f43
     s "But I couldn't help it!"
+    show sayori
     s "Once I got a whiff of them, I just had to see them."
+    show sayori
     s "And once I saw them, they were soooo cute!"
-    "Sayori walks over and begins hugging Natsuki while she's pouting."
+    show sayori happ ce at t41 zorder 1
+    show natsuki at t41 zorder 2
+    s "And you know I can't resist cute~"
+    show natsuki om with n_cg2_wiggle_loop
     n "H-Hey!"
     show sayori turned at t31
-    s "And you know I can't resist cute~"
+    show natsuki 
     n "I'M NOT CUTE DAMMIT!!"
-    "Natsuki flails around freeing herself from Sayori."
+    
     show sayori turned at t32
     n "You're lucky you're my friend, Sayori."
     m "Sayori, we've talked about this..."
