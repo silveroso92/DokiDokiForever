@@ -38,5 +38,4 @@ style phone_typing_istyping is empty:
     font phone.asset("Aller_Rg.ttf")
 
 init python:
-    if is_renpy_version_or_above(7, 7, 0):
-        style.phone_typing_text.emoji_font = None
+    style.phone_typing_text.emoji_font = None

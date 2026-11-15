@@ -18,7 +18,7 @@ init -100 python in phone.discussion:
         Actual dark magic...
         """
         def __init__(self, vp):
-            super(_AutoScrollVP, self).__init__(vp)
+            super().__init__(vp)
 
             self.vp = vp
             self.adj_text = vp.child.child
@@ -45,7 +45,7 @@ init -100 python in phone.discussion:
                     self.vp.xadjustment.value = current_text_size - self.vp.width
                     self.update()
 
-            return super(_AutoScrollVP, self).render(w, h, st, at)
+            return super().render(w, h, st, at)
 
 screen _chat_textbox():
     style_prefix "phone_textbox"

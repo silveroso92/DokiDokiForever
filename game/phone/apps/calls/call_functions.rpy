@@ -40,8 +40,7 @@ init -100 python in phone.calls:
 
         show_layer_at([], reset=True)
         renpy.hide_screen("phone_call")
-        if store.is_renpy_version_or_above(7, 5, 0):
-            renpy.scene(config.video_call_layer)
+        renpy.scene(config.video_call_layer)
         renpy.with_statement(config.exit_transition)
 
         set_current_screen(None)

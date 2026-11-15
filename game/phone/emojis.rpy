@@ -35,24 +35,25 @@ init -150 python in phone.emojis:
 
 init 1000 python hide in phone.emojis:
     if config.auto_emojis:
-        import os
+        # renpy.list_files() covers both loose files and files packed in .rpa archives,
+        # so emojis keep working in archived builds (os.listdir only saw loose files).
+        emoji_base_path = phone.asset("emojis").rstrip("/") + "/"
 
-        emoji_base_path = phone.asset("emojis")
+        for emoji in renpy.list_files(common=False):
+            if not emoji.startswith(emoji_base_path): continue
 
-        try:
-            for emoji in os.listdir(phone.path_join(store.config.basedir, "game", emoji_base_path)):
-                stuff = emoji.split(".")
-                
-                if len(stuff) != 2: continue
-                name, extension = stuff
+            filename = emoji[len(emoji_base_path):]
+            if "/" in filename: continue # only the top level of the emojis folder, as before
 
-                if extension.lower() not in ("png", "jpg", "jpeg", "svg"):
-                    continue
+            stuff = filename.split(".")
+            
+            if len(stuff) != 2: continue
+            name, extension = stuff
 
-                add(name, phone.path_join(emoji_base_path, emoji))
+            if extension.lower() not in ("png", "jpg", "jpeg", "svg", "webp", "avif"):
+                continue
 
-        except OSError:
-            pass
+            add(name, emoji)
 
 # prevent `default`
 python early in phone.emojis:

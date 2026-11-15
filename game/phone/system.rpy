@@ -3,10 +3,19 @@ init offset = -120
 init python in phone.system:
     from renpy import store
     
-    from pygame_sdl2.power import get_power_info    
+    # Ren'Py 8.5 replaced pygame_sdl2 with renpy.pygame.
+    try:
+        from renpy.pygame.power import get_power_info
+    except ImportError:
+        get_power_info = None
+
     def get_battery_level():
         if battery_level is not None: return int(battery_level)
-        return max(get_power_info().percent, 0)
+        if get_power_info is None: return 100
+
+        percent = get_power_info().percent
+        if percent is None: return 100
+        return max(percent, 0)
 
     from socket import gethostbyname, gethostname
     CONNECTED = 1
@@ -26,7 +35,10 @@ init python in phone.system:
 
         _wifi = wifi
         if _wifi is None:
-            _wifi = gethostbyname(gethostname()) != "127.0.0.1"
+            try:
+                _wifi = gethostbyname(gethostname()) != "127.0.0.1"
+            except OSError: # socket.gaierror when the hostname can't be resolved
+                _wifi = False
 
         if not _wifi:
             if cellular_data: return CELLULAR_DATA

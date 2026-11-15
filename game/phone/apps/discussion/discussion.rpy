@@ -240,7 +240,7 @@ init -100 python in phone.discussion:
         dc = _discussion_coroutine()
         dc.send(None)
 
-        if isinstance(value, basestring):
+        if isinstance(value, str):
             value = sender.get_typing_delay(value)
 
         dc.send(_Payload(sender.key, value, TYPING))
@@ -273,7 +273,7 @@ init -100 python in phone.discussion:
         dc.send(delay)
     
     def register_audio(group, sender, audio):
-        if not isinstance(audio, basestring):
+        if not isinstance(audio, str):
             raise TypeError("audio is expected to be a string")
 
         group = group_chat(group)

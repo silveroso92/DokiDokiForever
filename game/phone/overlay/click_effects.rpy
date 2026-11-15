@@ -26,7 +26,7 @@ define phone_on_drag_effect = ("phone_drag_effect", phone_drag_uptime)
 define phone_on_release_effect = None
 
 init -100 python in phone.click_effects:
-    import pygame_sdl2 as pygame
+    import renpy.pygame as pygame # pygame_sdl2 was replaced in Ren'Py 8.5
     # yes i know `SpriteManager`s exist :monikk:
     class ClickEffectDisplayable(object):
         def __init__(self, child, x, y, lifespan, last_st, zorder):
@@ -49,7 +49,7 @@ init -100 python in phone.click_effects:
         _DRAG = 1
 
         def __init__(self, on_click, on_drag, on_release):
-            super(ClickEffects, self).__init__()
+            super().__init__()
 
             if on_click is None:
                 self.on_click_d = self.on_click_lifespan = None

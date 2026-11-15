@@ -42,7 +42,7 @@ python early:
 
         if not renpy.compat.PY2:
             major += 1
-            minor -= 5
+            minor = max(0, minor -5)
 
         return current_version >= (major, minor, patch)
         

@@ -1,8 +1,8 @@
 python early in cds_utils:
     from renpy import store
 
-                            # if store.is_renpy_version_or_above(7, 6, 0)
-    Lexer = renpy.lexer.Lexer if renpy.version_tuple >= ((7, 6) if renpy.compat.PY2 else (8, 1)) else renpy.parser.Lexer
+    # Ren'Py 8.1+ moved the Lexer to renpy.lexer. Kept as an alias for any user code that relies on it.
+    Lexer = renpy.lexer.Lexer
 
     def null_parser(l):
         """
@@ -13,30 +13,30 @@ python early in cds_utils:
         l.advance()
         return None
 
-    class Statement(python_object):
+    class Statement(object):
         __slots__ = ()
 
         def execute(self, *args, **kwargs):
             raise NotImplementedError("'{}.execute' not implemented".format(type(self).__name__))
-
+        
         def lint(self):
             pass
 
         def get_translatable_strings(self):
             return [ ]
-
+    
     def execute(rv):
         """
         Calls the `execute` method of the object passed.
         """
         rv.execute()
-
+    
     def lint(rv):
         """
         Calls the `lint` method of the object passed.
         """
         rv.lint()
-
+    
     def get_translatable_strings(rv):
         """
         Calls the `get_translatable_strings` method of the object passed.
@@ -49,8 +49,8 @@ python early in phone._lint:
     _eval = eval
 
     def error(msg):
-        renpy.error("Better EMR Phone - {}".format(msg))
-
+        renpy.error("Better EMR Phone - {}".format(msg))   
+    
     cant_evaluate = renpy.object.Sentinel("_phone_cant_evaluate")
 
     def eval(thing, log=True):
@@ -68,7 +68,7 @@ python early in phone._lint:
                 phone.character.character(c)
             except Exception:
                 error("'{}' is not a *character*.".format(c))
-
+    
     def group_chat(gc, log=True):
         gc = eval(gc, log)
         if gc is not cant_evaluate:
@@ -76,7 +76,7 @@ python early in phone._lint:
                 phone.group_chat.group_chat(gc)
             except Exception:
                 error("'{}' is not a *group chat*.".format(gc))
-
+    
     def image(d, log=True):
         d = eval(d, log)
         if d is not cant_evaluate:
@@ -84,12 +84,12 @@ python early in phone._lint:
                 renpy.displayable(d)
             except Exception:
                 error("'{}' is not a displayable.".format(d))
-
+    
     def audio(a, log=True):
         a = eval(a, log)
         if a is not cant_evaluate:
             if not renpy.loader.loadable(a):
-                error("audio '{}' isn't loadable.".format(a))
+                error("audio '{}' isn't loadable.".format(a))      
 
 python early in phone:
     from renpy.store import cds_utils
@@ -101,7 +101,7 @@ python early in phone:
             self.sender = sender
             self.message = message
             self.delay = delay
-
+        
         def execute(self):
             globals = store.__dict__
             discussion.message(
@@ -109,14 +109,14 @@ python early in phone:
                 self.message,
                 eval(self.delay, globals)
             )
-
+        
         def lint(self):
             _lint.character(self.sender)
             _lint.eval(self.delay)
-
+        
         def get_translatable_strings(self):
             return [self.message]
-
+    
     class _RawPhoneImage(cds_utils.Statement):
         __slots__ = ("sender", "image", "time", "delay")
 
@@ -125,7 +125,7 @@ python early in phone:
             self.image = image
             self.time = time
             self.delay = delay
-
+        
         def execute(self):
             globals = store.__dict__
             discussion.image(
@@ -134,12 +134,12 @@ python early in phone:
                 eval(self.time, globals),
                 eval(self.delay, globals)
             )
-
+        
         def lint(self):
             _lint.character(self.sender)
-            _lint.image(self.image)
+            _lint.image(self.image)    
             _lint.eval(self.time)
-            _lint.eval(self.delay)
+            _lint.eval(self.delay)    
 
     class _RawPhoneLabel(cds_utils.Statement):
         __slots__ = ("label", "delay")
@@ -147,18 +147,18 @@ python early in phone:
         def __init__(self, label, delay):
             self.label = label
             self.delay = delay
-
+        
         def execute(self):
             delay = config.default_label_delay if self.delay is None else eval(self.delay, store.__dict__)
             discussion.label(self.label, delay)
-
+        
         def lint(self):
             if self.delay is not None:
                 _lint.eval(self.delay)
-
+        
         def get_translatable_strings(self):
             return [self.label]
-
+    
     class _RawPhoneDate(cds_utils.Statement):
         __slots__ = ("kwargs", "delay", "auto")
 
@@ -166,18 +166,18 @@ python early in phone:
             self.kwargs = kwargs
             self.delay = delay
             self.auto = auto
-
+        
         def execute(self):
             globals = store.__dict__
             delay = config.default_label_delay if self.delay is None else eval(self.delay, globals)
             discussion.date(delay=delay, auto=eval(self.auto, globals), **{k: eval(v, globals) for k, v in self.kwargs.items()})
-
+        
         def lint(self):
             month = _lint.eval(self.kwargs["month"])
             if month is not _lint.cant_evaluate:
                 if month not in (None, True) and (not isinstance(month, (int, float)) or not 1 <= month <= 12):
                     _lint.error("'{}' isn't a valid month.".format(month))
-
+            
             day = _lint.eval(self.kwargs["day"])
             if day is not _lint.cant_evaluate:
                 if day not in (None, True) and (not isinstance(day, (int, float)) or not 1 <= day <= 31):
@@ -192,17 +192,17 @@ python early in phone:
             if hour is not _lint.cant_evaluate:
                 if hour not in (None, True) and (not isinstance(hour, (int, float)) or not 0 <= hour <= 23):
                     _lint.error("'{}' isn't a valid hour.".format(hour))
-
+            
             second = _lint.eval(self.kwargs["second"])
             if second is not _lint.cant_evaluate:
                 if second not in (None, True) and (not isinstance(second, (int, float)) or not 0 <= second <= 59):
                     _lint.error("'{}' isn't a valid second.".format(second))
-
+            
             _lint.eval(self.kwargs["year"])
             if self.delay is not None:
                 _lint.eval(self.delay)
             _lint.eval(self.auto)
-
+    
     class _RawPhoneTyping(cds_utils.Statement):
         __slots__ = ("sender", "value", "delay")
 
@@ -210,7 +210,7 @@ python early in phone:
             self.sender = sender
             self.value = value
             self.delay = delay
-
+        
         def execute(self):
             globals = store.__dict__
             discussion.typing(
@@ -218,18 +218,18 @@ python early in phone:
                 eval(self.value, globals),
                 eval(self.delay, globals)
             )
-
+        
         def lint(self):
             _lint.character(self.sender)
             _lint.eval(self.value)
             _lint.eval(self.delay)
-
+    
     class _RawPhoneIf(cds_utils.Statement):
         __slots__ = ("entries",)
 
         def __init__(self, entries):
             self.entries = entries
-
+        
         def execute(self):
             globals = store.__dict__
             for condition, block in self.entries:
@@ -237,21 +237,21 @@ python early in phone:
                     for statement in block:
                         statement.execute()
                     return
-
+        
         def get_translatable_strings(self):
             rv = [ ]
             for _condition, block in self.entries:
                 for statement in block:
                     rv.extend(statement.get_translatable_strings())
             return rv
-
+    
     class _RawPhoneMenu(cds_utils.Statement):
         __slots__ = ("entries", "delay")
 
         def __init__(self, entries, delay):
             self.entries = entries
             self.delay = delay
-
+        
         def execute(self):
             globals = store.__dict__
 
@@ -259,16 +259,14 @@ python early in phone:
             captions = [ ]
 
             for caption, condition, block in self.entries:
-                if not eval(condition, globals):
-                    continue
-                blocks.append(block)
-                captions.append(caption)
-
+                if not eval(condition, globals): continue
+                blocks.append(block); captions.append(caption)
+            
             i = discussion.choice(captions, eval(self.delay, globals))
 
             for statement in blocks[i]:
                 statement.execute()
-
+        
         def get_translatable_strings(self):
             rv = [ ]
             for caption, _condition, block in self.entries:
@@ -276,14 +274,14 @@ python early in phone:
                 for statement in block:
                     rv.extend(statement.get_translatable_strings())
             return rv
-
+    
         def lint(self):
             for _caption, _condition, block in self.entries:
                 for statement in block:
                     statement.lint()
-
-            _lint.eval(self.delay)
-
+            
+            _lint.eval(self.delay) 
+    
     class _RawPhonePython(cds_utils.Statement):
         __slots__ = ("code", "hide", "store")
 
@@ -299,7 +297,7 @@ python early in phone:
                 if not renpy.is_init_phase():
                     for i in renpy.config.python_callbacks:
                         i()
-
+    
     class _RawPhoneAudio(cds_utils.Statement):
         __slots__ = ("sender", "audio", "time", "delay")
 
@@ -308,7 +306,7 @@ python early in phone:
             self.audio = audio
             self.time = time
             self.delay = delay
-
+        
         def execute(self):
             globals = store.__dict__
             discussion.audio(
@@ -317,17 +315,17 @@ python early in phone:
                 eval(self.time, globals),
                 eval(self.delay, globals)
             )
-
+        
         def lint(self):
             _lint.character(self.sender)
             _lint.audio(self.audio)
             _lint.eval(self.time)
             _lint.eval(self.delay)
-
+    
     class _RawPhonePass(cds_utils.Statement):
         def execute(self):
             pass
-
+    
     class _RawPhonePause(cds_utils.Statement):
         __slots__ = ("duration",)
 
@@ -336,20 +334,20 @@ python early in phone:
 
         def execute(self):
             store.pause(eval(self.duration, store.__dict__))
-
+        
         def lint(self):
             _lint.eval(self.duration)
-
+    
     # class _RawPhoneRenpy(cds_utils.Statement):
     #     __slots__ = ("nodes",)
 
     #     def __init__(self, nodes):
     #         self.nodes = nodes
-
+        
     #     def execute(self):
     #         for node in self.nodes:
     #             node.execute()
-
+        
     #     def translation_strings(self):
     #         Say = renpy.ast.Say
     #         UserStatement = renpy.ast.UserStatement
@@ -385,7 +383,7 @@ python early in phone:
     #                 if isinstance(node, If):
     #                     for s in get_strings(entry[1] for entry in node.entries):
     #                         yield s
-
+                    
     #                 elif isinstance(node, While):
     #                     for s in get_strings(node.block):
     #                         yield s
@@ -393,7 +391,7 @@ python early in phone:
     #                 if not node.translation_relevant: continue
 
     #                 for s in get_translatable_strings(node):
-    #                     yield s
+    #                     yield s 
 
     #         for string in get_strings(self.nodes):
     #             yield string
@@ -404,29 +402,28 @@ python early in phone:
         def __init__(self, gc, statements):
             self.gc = gc
             self.statements = statements
-
+        
         def execute(self):
             gc = self.gc
-            if gc is not None:
-                gc = group_chat.group_chat(eval(gc, store.__dict__))
+            if gc is not None: gc = group_chat.group_chat(eval(gc, store.__dict__))
             discussion.discussion(gc)
 
             for statement in self.statements:
                 statement.execute()
-
+    
         def lint(self):
             if self.gc is not None:
                 _lint.group_chat(self.gc)
 
             for statement in self.statements:
                 statement.lint()
-
+        
         def get_translatable_strings(self):
             rv = [ ]
             for statement in self.statements:
                 rv.extend(statement.get_translatable_strings())
             return rv
-
+    
     ############################
 
     class _RawPhoneRegisterMessage(cds_utils.Statement):
@@ -442,13 +439,13 @@ python early in phone:
                 eval(self.sender, store.__dict__),
                 self.message
             )
-
+        
         def lint(self):
             _lint.character(self.sender)
-
+        
         def get_translatable_strings(self):
             return [self.message]
-
+    
     class _RawPhoneRegisterImage(cds_utils.Statement):
         __slots__ = ("sender", "image")
 
@@ -463,40 +460,40 @@ python early in phone:
                 eval(self.sender, globals),
                 eval(self.image, globals)
             )
-
+        
         def lint(self):
             _lint.character(self.sender)
             _lint.image(self.image)
-
+    
     class _RawPhoneRegisterLabel(cds_utils.Statement):
         __slots__ = ("label",)
 
         def __init__(self, label):
             self.label = label
-
+        
         def execute(self, gc):
             discussion.register_label(gc, self.label)
 
         def get_translatable_strings(self):
             return [self.label]
-
+    
     class _RawPhoneRegisterDate(cds_utils.Statement):
         __slots__ = ("kwargs", "auto")
 
         def __init__(self, kwargs, auto):
             self.kwargs = kwargs
             self.auto = auto
-
+        
         def execute(self, gc):
             globals = store.__dict__
             discussion.register_date(gc, auto=eval(self.auto, globals), **{k: eval(v, globals) for k, v in self.kwargs.items()})
-
+        
         def lint(self):
             month = _lint.eval(self.kwargs["month"])
             if month is not _lint.cant_evaluate:
                 if month not in (None, True) and (not isinstance(month, (int, float)) or not 1 <= month <= 12):
                     _lint.error("'{}' isn't a valid month.".format(month))
-
+            
             day = _lint.eval(self.kwargs["day"])
             if day is not _lint.cant_evaluate:
                 if day not in (None, True) and (not isinstance(day, (int, float)) or not 1 <= day <= 31):
@@ -511,12 +508,12 @@ python early in phone:
             if hour is not _lint.cant_evaluate:
                 if hour not in (None, True) and (not isinstance(hour, (int, float)) or not 0 <= hour <= 23):
                     _lint.error("'{}' isn't a valid hour.".format(hour))
-
+            
             second = _lint.eval(self.kwargs["second"])
             if second is not _lint.cant_evaluate:
                 if second not in (None, True) and (not isinstance(second, (int, float)) or not 0 <= second <= 59):
                     _lint.error("'{}' isn't a valid second.".format(second))
-
+            
             _lint.eval(self.kwargs["year"])
             _lint.eval(self.auto)
 
@@ -525,7 +522,7 @@ python early in phone:
 
         def __init__(self, entries):
             self.entries = entries
-
+        
         def execute(self, gc):
             globals = store.__dict__
             for condition, statements in self.entries:
@@ -540,7 +537,7 @@ python early in phone:
                 for statement in statements:
                     rv.extend(statement.get_translatable_strings())
             return rv
-
+    
     class _RawPhoneRegisterAudio(cds_utils.Statement):
         __slots__ = ("sender", "audio")
 
@@ -555,37 +552,37 @@ python early in phone:
                 eval(self.sender, globals),
                 eval(self.audio, globals)
             )
-
+        
         def lint(self):
             _lint.character(self.sender)
             _lint.audio(self.audio)
-
+    
     class _RawPhoneRegisterPass(cds_utils.Statement):
         def execute(self, gc):
             pass
-
+    
     class _RawPhoneRegister(cds_utils.Statement):
         __slots__ = ("gc", "statements")
 
         def __init__(self, gc, statements):
             self.gc = gc
             self.statements = statements
-
+        
         def execute(self):
             gc = group_chat.group_chat(eval(self.gc, store.__dict__))
 
             for statement in self.statements:
                 if isinstance(statement, _RawPhonePython): # breh
-                    statement.execute()
+                    statement.execute() 
                 else:
                     statement.execute(gc)
-
+    
         def lint(self):
             _lint.group_chat(self.gc)
 
             for statement in self.statements:
                 statement.lint()
-
+        
         def get_translatable_strings(self):
             rv = [ ]
             for statement in self.statements:
@@ -598,8 +595,7 @@ python early in phone:
         sender = ll.require(ll.simple_expression)
         message = ll.require(ll.string)
 
-        if register:
-            return _RawPhoneRegisterMessage(sender, message)
+        if register: return _RawPhoneRegisterMessage(sender, message)
 
         delay = "None" if not ll.keyword("delay") else ll.require(ll.simple_expression)
         return _RawPhoneMessage(sender, message, delay)
@@ -608,8 +604,7 @@ python early in phone:
         sender = ll.require(ll.simple_expression)
         image = ll.require(ll.simple_expression)
 
-        if register:
-            return _RawPhoneRegisterImage(sender, image)
+        if register: return _RawPhoneRegisterImage(sender, image)
 
         time = None
         delay = None
@@ -623,32 +618,29 @@ python early in phone:
                     ll.revert(state)
                     ll.error("'time' property already given")
                 time = ll.require(ll.simple_expression)
-
+            
             elif kwarg == "delay":
                 if delay is not None:
                     ll.revert(state)
                     ll.error("'delay' property already given")
                 delay = ll.require(ll.simple_expression)
-
+            
             else:
                 ll.revert(state)
                 ll.error("unknown property '{}'".format(kwarg))
 
-        if time is None:
-            time = "2.0"
-        if delay is None:
-            delay = "None"
+        if time is None: time = "2.0"
+        if delay is None: delay = "None"
         return _RawPhoneImage(sender, image, time, delay)
-
+    
     def _parse_phone_label(ll, register):
         label = ll.require(ll.string)
 
-        if register:
-            return _RawPhoneRegisterLabel(label)
+        if register: return _RawPhoneRegisterLabel(label)
 
         delay = None if not ll.keyword("delay") else ll.require(ll.simple_expression)
         return _RawPhoneLabel(label, delay)
-
+    
     def _parse_phone_date(ll, register):
         kwargs = {time_thing: "None" for time_thing in ("month", "day", "year", "hour", "minute", "second")}
         kwargs["auto"] = "False"
@@ -666,7 +658,7 @@ python early in phone:
             if t in seen:
                 ll.revert(state)
                 ll.error("'{}' already given".format(t))
-
+            
             if t == "auto" and ll.init:
                 ll.revert(state)
                 ll.error("'auto' can't be used in the `init phone register` statement")
@@ -676,7 +668,7 @@ python early in phone:
 
             if ll.eol():
                 break
-
+        
         auto = kwargs.pop("auto")
         delay = kwargs.pop("delay")
 
@@ -686,7 +678,7 @@ python early in phone:
             return _RawPhoneRegisterDate(kwargs, auto)
 
         return _RawPhoneDate(kwargs, delay, auto)
-
+    
     def _parse_phone_typing(ll):
         sender = ll.require(ll.simple_expression)
 
@@ -702,26 +694,24 @@ python early in phone:
                     ll.revert(state)
                     ll.error("'value' property already given")
                 value = ll.require(ll.simple_expression)
-
+            
             elif kwarg == "delay":
                 if delay is not None:
                     ll.revert(state)
                     ll.error("'delay' property already given")
                 delay = ll.require(ll.simple_expression)
-
+            
             else:
                 ll.revert(state)
                 ll.error("unknown property '{}'".format(kwarg))
 
             if ll.eol():
                 break
-
-        if value is None:
-            ll.error("expected 'value' property not found")
-        if delay is None:
-            delay = "None"
+        
+        if value is None: ll.error("expected 'value' property not found")
+        if delay is None: delay = "None"
         return _RawPhoneTyping(sender, value, delay)
-
+    
     def _parse_phone_if(ll, register): # literally renpy.parser.if_statement
         entries = [ ]
 
@@ -754,7 +744,7 @@ python early in phone:
             entries.append(("True", _get_phone_statements(ll.subblock_lexer(), not register)))
 
             ll.advance()
-
+        
         if register:
             return _RawPhoneRegisterIf(entries)
         else:
@@ -773,7 +763,7 @@ python early in phone:
             delay = menu_l.require(menu_l.simple_expression)
             menu_l.expect_eol()
             menu_l.advance()
-
+            
         entries = [ ]
 
         while not menu_l.eob:
@@ -782,24 +772,23 @@ python early in phone:
             condition = "True"
             if menu_l.keyword("if"):
                 condition = menu_l.require(menu_l.python_expression)
-
+            
             menu_l.require(":")
             menu_l.expect_eol()
             menu_l.expect_block("phone menuitem")
 
             entries.append((caption, condition, _get_phone_statements(menu_l.subblock_lexer(), True)))
             menu_l.advance()
-
+        
         return _RawPhoneMenu(entries, delay)
-
+    
     def _parse_phone_one_line_python(ll):
         code = ll.rest_statement()
-        if not code:
-            ll.error("expected python code")
+        if not code: ll.error("expected python code")
         ll.expect_noblock("one-line python statement")
 
         return _RawPhonePython(code, False, "store")
-
+    
     def _prase_phone_python(ll):
         hide = False
         store = "store"
@@ -816,7 +805,7 @@ python early in phone:
         ll.expect_block("python block")
 
         return _RawPhonePython(ll.python_block(), hide, store)
-
+    
     def _parse_phone_audio(ll, register):
         sender = ll.require(ll.simple_expression)
         audio = ll.require(ll.simple_expression)
@@ -836,21 +825,19 @@ python early in phone:
                     ll.revert(state)
                     ll.error("'time' property already given")
                 time = ll.require(ll.simple_expression)
-
+            
             elif kwarg == "delay":
                 if delay is not None:
                     ll.revert(state)
                     ll.error("'delay' property already given")
                 delay = ll.require(ll.simple_expression)
-
+            
             else:
                 ll.revert(state)
                 ll.error("unknown property '{}'".format(kwarg))
 
-        if time is None:
-            time = "2.0"
-        if delay is None:
-            delay = "None"
+        if time is None: time = "2.0"
+        if delay is None: delay = "None"
         return _RawPhoneAudio(sender, audio, time, delay)
 
     def _parse_phone_pause(ll):
@@ -881,28 +868,28 @@ python early in phone:
 
                 elif ll.keyword("type"):
                     statement = _parse_phone_typing(ll)
-
+                
                 elif ll.keyword("if"):
                     statement = _parse_phone_if(ll, False)
-
+                
                 elif ll.keyword("menu"):
                     statement = _parse_phone_menu(ll)
-
+                
                 elif ll.match(r"\$"):
                     statement = _parse_phone_one_line_python(ll)
-
+                
                 elif ll.keyword("python"):
                     statement = _prase_phone_python(ll)
-
+                
                 elif ll.keyword("audio"):
                     statement = _parse_phone_audio(ll, False)
-
+                
                 elif ll.keyword("pass"):
                     statement = _RawPhonePass()
-
+                
                 elif ll.keyword("pause"):
                     statement = _parse_phone_pause(ll)
-
+                
                 # elif ll.keyword("renpy"):
                 #     statement = _parse_phone_renpy(ll)
 
@@ -912,7 +899,7 @@ python early in phone:
                 statements.append(statement)
 
                 ll.expect_eol()
-
+        
         else:
             while ll.advance():
                 if ll.keyword("image"):
@@ -923,19 +910,19 @@ python early in phone:
 
                 elif ll.keyword("time"):
                     statement = _parse_phone_date(ll, True)
-
+                
                 elif ll.keyword("if"):
                     statement = _parse_phone_if(ll, True)
-
+                
                 elif ll.match(r"\$"):
                     statement = _parse_phone_one_line_python(ll)
-
+                
                 elif ll.keyword("python"):
                     statement = _prase_phone_python(ll)
-
+                
                 elif ll.keyword("audio"):
                     statement = _parse_phone_audio(ll, True)
-
+                
                 elif ll.keyword("pass"):
                     statement = _RawPhoneRegisterPass()
 
@@ -945,7 +932,7 @@ python early in phone:
                 statements.append(statement)
 
                 ll.expect_eol()
-
+        
         return statements
 
     def _parse_phone_discussion(l):
@@ -954,7 +941,7 @@ python early in phone:
         if l.eol():
             l.expect_noblock("phone discussion")
             statements = [_RawPhonePass()]
-
+        
         else:
             l.require(":")
             l.expect_eol()
@@ -964,11 +951,11 @@ python early in phone:
             statements = _get_phone_statements(ll, True)
 
         return _RawPhoneDiscussion(gc, statements)
-
+    
     def _predict_phone_discussion(rd):
         renpy.predict_screen("phone_discussion")
         return [ ]
-
+    
     def _phone_execute_init(rv):
         for statement in rv.statements:
             if isinstance(statement, _RawPhonePython):
@@ -983,7 +970,7 @@ python early in phone:
         translation_strings=cds_utils.get_translatable_strings,
         lint=cds_utils.lint,
         predict=_predict_phone_discussion
-    )
+    )       
 
     ########################################################
 
@@ -1002,7 +989,7 @@ python early in phone:
         rv = l.require(l.simple_expression)
         video = False
         nosave = False
-
+        
         while not l.eol():
             state = l.checkpoint()
             thing = l.word()
@@ -1020,10 +1007,11 @@ python early in phone:
                     l.error("nosave clause already given")
                 else:
                     nosave = True
-
+            
             else:
                 l.revert(state)
                 l.error("unknown property %s" % thing)
+        
 
         l.expect_eol()
         l.expect_noblock("phone call")
@@ -1032,7 +1020,7 @@ python early in phone:
     def _execute_phone_call(tu):
         c = character.character(eval(tu[0], store.__dict__))
         calls.call(c, tu[1], tu[2])
-
+    
     def _predict_phone_call(tu):
         renpy.predict_screen("phone_call", video=tu[1])
         return [ ]
@@ -1060,7 +1048,7 @@ python early in phone:
     )
 
     ########################################################
-
+    
     def _parse_phone_register(l):
         if l.init:
             # set the pos to the beginning of the statement
@@ -1068,19 +1056,19 @@ python early in phone:
             l.unadvance()
             l.advance()
             l.error("the `phone register` statement can't be used during init. see the `init phone register` statement instead.")
-
+        
         gc = l.require(l.simple_expression)
 
         l.require(":")
         l.expect_eol()
         l.expect_block("phone register")
         ll = l.subblock_lexer()
-
+        
         statements = _get_phone_statements(ll, False)
-
+        
         if not statements:
             ll.error("expected at least one statement")
-
+        
         return _RawPhoneRegister(gc, statements)
 
     def _translation_strings_phone_register(rpr):
@@ -1093,10 +1081,8 @@ python early in phone:
                 elif isinstance(statement, _RawPhoneRegisterLabel):
                     rv.append(statement.label)
                 elif isinstance(statement, _RawPhoneRegisterIf):
-                    # FIX: _RawPhoneRegisterIf stores its blocks in `entries`, not `blocks`.
-                    for _condition, block in statement.entries:
-                        get_strings(block)
-
+                    get_strings(block[1] for block in statement.blocks)
+        
         get_strings(rpr.statements)
         return rv
 
@@ -1108,94 +1094,76 @@ python early in phone:
         execute_init=_phone_execute_init,
         translation_strings=_translation_strings_phone_register,
         lint=cds_utils.lint
-    )
+    ) 
 
     ########################################################
 
     # soooooooooooooooooooooooooooooooooooooooooooooooo clunky
-    def _phone_unwrap_default(statement):
-        """
-        Ren'Py 8.5+ wraps the Default node returned by
-        renpy.parser.default_statement() in an Init node.
-        Returns the inner Default node (or the statement unchanged
-        on older Ren'Py versions).
-        """
-        while isinstance(statement, renpy.ast.Init) and statement.block:
-            statement = statement.block[0]
-        return statement
-
-    def _phone_default_varname(statement):
-        """
-        Returns the variable name from a Ren'Py default statement,
-        unwrapping Init nodes if necessary.
-        """
-        current = statement
-        visited = set()
-
-        while current is not None and id(current) not in visited:
-            visited.add(id(current))
-
-            if hasattr(current, "varname"):
-                return current.varname
-
-            block = getattr(current, "block", None)
-            if not block:
-                break
-
-            current = block[0]
-
-        raise Exception(
-            "Unable to locate varname in phone default statement: {!r}".format(statement)
-        )
-
     class _RawInitPhoneRegister(_RawPhoneRegister):
-        __slots__ = ("name", "icon", "key", "chars", "transient", "default_statement")
+        __slots__ = ("name", "icon", "key", "chars", "transient", "as_name")
 
-        def __init__(self, gc, statements, name, icon, key, chars, transient, default_statement):
-            super(_RawInitPhoneRegister, self).__init__(gc, statements)
+        def __init__(self, gc, statements, name, icon, key, chars, transient, as_name):
+            super().__init__(gc, statements)
             self.name = name
             self.icon = icon
             self.key = key
             self.chars = chars
             self.transient = transient
-            self.default_statement = default_statement
+            # Dotted name of the variable given with the `as` property, or None.
+            self.as_name = as_name
+
+        def _as_location(self):
+            """
+            Splits `as_name` into (store name, variable name).
+            "gc" -> ("store", "gc"); "phone.my_gc" -> ("store.phone", "my_gc")
+            """
+            namespace, _, varname = self.as_name.rpartition(".")
+            return ("store." + namespace if namespace else "store"), varname
 
         def execute(self):
-            if self.default_statement is not None:
-                # Safety net in case an older pickled/compiled node is still wrapped.
-                self.default_statement = _phone_unwrap_default(self.default_statement)
-                self.default_statement.execute()
+            if self.as_name is not None:
+                # Make sure the namespace exists before the game starts (init phase).
+                renpy.python.create_store(self._as_location()[0])
             execute_default(self._execute, ("phone define gc", self.gc if self.gc is not None else str(self.key)))
-
+        
         def _execute(self):
             gc = None
 
             globals = store.__dict__
-            if self.default_statement is not None:
-                varname = _phone_default_varname(self.default_statement)
-                gc = getattr(store, varname)
-            else:
-                if self.name is not None:
-                    gc = group_chat.GroupChat(self.name, eval(self.icon, globals), eval(self.key, globals), transient=self.transient)
+            if self.name is not None:
+                if self.as_name is not None:
+                    # Replicates the `default` statement without relying on Ren'Py's parser
+                    # internals (renpy.parser.default_statement returns an `Init` node in 8.5+,
+                    # which caused "AttributeError: 'Init' object has no attribute 'varname'").
+                    store_name, varname = self._as_location()
+                    namespace = renpy.python.store_dicts[store_name]
 
+                    if varname in namespace:
+                        gc = namespace[varname]
+                    else:
+                        gc = group_chat.GroupChat(self.name, eval(self.icon, globals), eval(self.key, globals), transient=self.transient)
+                        namespace[varname] = gc
+                else:
+                    gc = group_chat.GroupChat(self.name, eval(self.icon, globals), eval(self.key, globals), transient=self.transient)
+            
             if gc is not None:
                 for char in self.chars:
                     gc.add_character(character.character(eval(char, globals)))
 
-            super(_RawInitPhoneRegister, self).execute()
-
+            super().execute()
+        
         def get_translatable_strings(self):
-            rv = super(_RawInitPhoneRegister, self).get_translatable_strings()
+            rv = super().get_translatable_strings()
             if self.name is not None:
                 rv.insert(0, self.name)
             return rv
-
+    
         def lint(self):
             _lint.eval(self.icon)
             _lint.eval(self.key)
             for char in self.chars:
                 _lint.character(char)
-
+    
     ############################
 
     _INIT_PHONE_REGISTER_PRIORITY = 700
@@ -1209,14 +1177,13 @@ python early in phone:
         l.expect_eol()
         l.expect_block("init phone register")
         ll = l.subblock_lexer(init=True)
-
+        
         name = None
         key = None
         icon = None
         chars = [ ]
         transient = False
         _as = None
-        default_statement = None
 
         if no_gc:
             ll.advance()
@@ -1267,41 +1234,17 @@ python early in phone:
 
             if key is None:
                 dl.error("expected 'key' property")
-
+                        
             if icon is None:
                 icon = 'phone.asset("default_icon.png")'
 
-            if _as is not None:
-                filename, linenumber = l.get_location()
-
-                global _INIT_PHONE_REGISTER_PRIORITY
-                string = "{init} {_as} = phone.group_chat.GroupChat('{name}', {icon}, {key}, transient={transient})" \
-                        .format(
-                            init=_INIT_PHONE_REGISTER_PRIORITY,
-                            _as=_as,
-                            name=name,
-                            icon=icon,
-                            key=key,
-                            transient=transient,
-                        )
-
-                lexer = cds_utils.Lexer(
-                    [(filename, linenumber, string, None)], True
-                )
-                lexer.advance()
-
-                default_statement = renpy.parser.default_statement(lexer, (filename, linenumber))
-
-                # FIX: Ren'Py 8.5+ wraps the Default node in an Init node; unwrap it.
-                default_statement = _phone_unwrap_default(default_statement)
-
         statements = _get_phone_statements(ll, False)
-
+        
         if not statements and not no_gc:
             ll.error("expected at least one statement")
-
-        return _RawInitPhoneRegister(gc, statements, name, icon, key, chars, transient, default_statement)
-
+        
+        return _RawInitPhoneRegister(gc, statements, name, icon, key, chars, transient, _as)
+    
     def _translation_strings_init_phone_register(ripr):
         rv = _translation_strings_phone_register(ripr)
         if ripr.name is not None:
@@ -1318,7 +1261,7 @@ python early in phone:
         execute_init=_phone_execute_init,
         translation_strings=cds_utils.get_translatable_strings,
         lint=cds_utils.lint,
-    )
+    ) 
 
 # screen displayables
 python early:

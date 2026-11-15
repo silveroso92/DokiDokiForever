@@ -2,7 +2,7 @@ python early in phone:
     from renpy import store
     from store import config as renpy_config # phone.config is a substore
 
-    __version__ = (3, 2, 2)
+    __version__ = (3, 3, 0) # unofficial Python 3 / Ren'Py 8.5+ port of 3.2.2
     __author__ = "Elckarow#8399" # smh my head my head
 
 init -150 python in phone:
@@ -108,7 +108,7 @@ init -100 python in phone:
     store.PhoneReturn = PhoneReturn
 
     def show_layer_at(at_list, layer="master", camera=True, reset=False):
-        if isinstance(at_list, basestring):
+        if isinstance(at_list, str):
             at_list = config.layer_at_transforms.get(at_list, config.layer_at_transforms[None])
         
         if not isinstance(at_list, list):
@@ -214,7 +214,7 @@ init 1500:
             raise Exception("store.PhoneReturn is a reserved name. (value is %r)" % store.PhoneReturn)
         store.PhoneReturn = PhoneReturn
 
-        if store.is_renpy_version_or_above(7, 6, 0):
+        if config.video_call_layer not in renpy_config.detached_layers:
             renpy_config.detached_layers.append(config.video_call_layer)
         
         # https://github.com/renpy/renpy/issues/5044

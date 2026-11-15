@@ -47,7 +47,7 @@ init -100 python in phone.discussion.audio_messages:
     
     class _AudioWaveDisplayable(renpy.Displayable):
         def __init__(self, d, p):
-            super(_AudioWaveDisplayable, self).__init__()
+            super().__init__()
 
             self.d = renpy.displayable(d)
             self.p = p

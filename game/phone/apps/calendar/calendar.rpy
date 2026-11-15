@@ -57,7 +57,7 @@ init -100 python in phone.calendar:
         
     class Calendar(calendar.Calendar):
         def __init__(self, month, year=2017, first_day=SUNDAY):
-            super(Calendar, self).__init__(first_day)
+            super().__init__(first_day)
             
             self.month = month
             self.month_name = months[month]
