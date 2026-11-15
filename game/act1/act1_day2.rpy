@@ -169,7 +169,7 @@
     mc "AH! Sorry, I didn't see you."
     "I immediately bend down and grab the book on the ground."
     "It's a pink covered manga book with cutesy girls in dramatic poses on the cover."
-    show natsuki oe ce at f11
+    show natsuki oe om at f11
     qu "Geez, dude! Watch where you're go-{nw=1.0}"
     show natsuki turned lsur oe cm at t11
     pause 1.0   
@@ -240,12 +240,8 @@
     scene bg bedroom
     "I head upstairs and begin to work on my homework."
     "I'm able to get my current assignments done and start working on the backlog."
-    "My phone notification goes off and I see one new message from Dad."
-    d "Sayori's mom told us about Elsea. Sorry to hear about that kiddo. "
-    d "I understand your wounds are still fresh and this is a big change, so I was able to talk to your mother to give a bit of leniency from what happened this morning, but that doesn't excuse you from responsibilities. "
-    d "You're almost an adult. You won't be able to run away from your problems. Focus on your school right now so you don't ruin your future. "
-    d "We're here if you need to talk. "
-    d "Love you."
+    "My phone notification goes off and I see new messages from Dad."
+    call dad_text_day2
     "Ruin my future..."
     "I look at my exit survey assignment realizing I have to come to grips that my future won't have her in it."
     "Without her, do I even have a future?"

@@ -1,7 +1,7 @@
 # /!\ default
 # pc as in phone character :monikk:
 default pc_sayori  = phone.character.Character("Sayori", phone.asset("sayori_icon.png"), "s", 21, "#22Abf8")
-default pc_mc      = phone.character.Character("MC", phone.asset("mc_icon.png"), "mc", 35, "#484848")
+default pc_mc      = phone.character.Character("[player]", phone.asset("mc_icon.png"), "mc", 35, "#484848")
 default pc_yuri    = phone.character.Character("Yuri", phone.asset("yuri_icon.png"), "y", 20, "#a327d6")
 default pc_monika  = phone.character.Character("Monika", phone.asset("monika_icon.png"), "m", 40, "#0a0")
 default pc_natsuki = phone.character.Character("Natsuki", phone.asset("natsuki_icon.png"), "n", 45, "#fbb")
@@ -11,8 +11,10 @@ default pc_dad  =  phone.character.Character("Dad", phone.asset("mc_icon.png"), 
 
 default pov_key = "mc"
 
+
+
 define phone_s  = Character("Sayori", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
-define phone_mc = Character("MC", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
+define phone_mc= Character("[player]", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
 define phone_mom  = Character("Mom", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
 define phone_m  = Character("Monika", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
 define phone_dad  = Character("Dad", screen="phone_say", who_style="phone_say_label", what_style="phone_say_dialogue")
@@ -30,6 +32,30 @@ init phone register:
         add "s" add "mc" add "y" add "m" add "n"
         icon phone.asset("default_icon.png")
         as thanks_for_using_my_framework key "ddu"
+
+init phone register:
+    define "Elsea":
+        add "mc" add "e"
+        icon phone.asset("default_icon.png")
+        as breakup key "but"
+
+    time year 2026 month 8 day 8 hour 19 minute 43    
+    "mc" "what do you mean?"
+    "e" "Its just been too much. i cant keep doing this with you. I need a break"
+    "mc" "What did I do wrong. tell me. we can work this out"
+    "e" "We cant. im sorry we couldnt make this work"
+
+init phone register:
+    define "Dad":
+        add "mc" add "dad"
+        icon phone.asset("default_icon.png")
+        as dad_text_day2 key "dd2"
+    
+init phone register:
+    define "Sayori":
+        add "mc" add "s"
+        icon phone.asset("default_icon.png")
+        as sayori_text_log key "stl"       
 
 label phone_discussion_test:
     phone discussion "ddu":
@@ -65,78 +91,3 @@ label phone_call_test:
     "..."
 
     return
-
-label phone_mom_day02_1:
-    phone call "mom"
-    call_mc "What is it?"
-    phone_mom "What do you think you are doing??"
-    phone_mc_sayer "My heart drops"
-    call_mc "...w..what?"
-    phone_mc_sayer "I look at the caller ID."
-    phone_mc_sayer "Crap"
-    phone_mom "You heard what I said. Why are you not in school? We just got a call that you never showed up for your homeroom! And what's this about falling asleep in class?"
-    call_mc "...."
-    phone_mom "Well? Are you gonna say something or just sit there being silent?"
-    phone_mc_sayer "All the frustration begins to well up and I start choking on my words."
-    call_mc "..I, I just can't...keep..."
-    phone_mom "You are too old to be trying to pull this crap. Do you really think you and Elsea will have any sort of future if you keep acting like this? Get to school! NOW!"
-    call_mc "You...don't know-"
-    phone_mom "Know what?"
-    call_mc "...of course you don't. That would require you to be here."
-    phone_mom "...WHAT?? WHO DO YOU THINK YOU-{nw=0.5}"
-    phone end call
-    
-    return
-
-label phone_dad_day03_1:
-    phone call "dad"
-    call_mc "I'm here! I'm here!"
-    phone_dad "So you haven't gone deaf. Good to know."
-    call_mc "What's up?"
-    phone_dad "Just making sure that 'what' is you. We don't want to hear about any truancy today so I figured I'd give you a wake up call."
-    phone_mc_sayer "And what if I would have just turned my phone off?"
-    phone_dad "In case you were thinking about turning your phone off, we would have called your neighbor again to give you a bit of motivation."
-    phone_dad "And I personally would give her that bounty. Dead or alive."
-    phone_mc_sayer "*gulp*"
-    call_mc "... I wasn't going to skip today, okay? I'm fully aware of the stakes."
-    phone_dad "You better be. You need to start watching out for yourself. While we may be your safety net now, we're not gonna just hold you. We'll fling you back into it."
-    phone_dad "Remember, we're not gonna be here forever. That goes for everyone. So you need to prepare to hold your own weight."
-    call_mc "Yeah. I know..."
-    phone_dad "Okay. You should have time to make yourself some breakfast, so do that and don't skip it. Based on your behavior yesterday I take it you didn't eat much, did you?"
-    call_mc "Wait. How did you-{nw=0.7}"
-    phone_dad "Call it 22 years experience."
-    call_mc "But I'm 18..."
-    phone_dad "And the second one I have to live with who gets like that."
-    phone_mom "What was that?"
-    phone_dad "I said you order breakfast yet?"
-    phone_mom "*grumble*"
-    phone_mc_sayer "I chuckle for the first time in days"
-    phone_dad "I gotta go. Get some food and go to school."
-    call_mc "Yeah. Will do."
-    phone end call
-
-    return
-'''label sayori_text_day06_1:
-    phone discussion "std":
-        "s" "Hey! Get any progress yesterday? [Add phone screen here with the text]"
-        mc "I remember on our walk home that I told her my plan of barreling through the rest of my homework. I figured at the time it was the easiest thing to open up to her about."
-        "mc" "Yeah. I got basically all of it done. Just got my post school roadmap to do."
-        "s" "Cool Beans! : )"
-        "s" "So Whatcha got planned today?"
-        "mc" "I gotta get groceries. Ran out of food."
-        mc "As I sit there and go back to thinking of food to add, it hits me: Sayori most likely wants to hang out today. "
-        mc "Sure, we spend time in the club and on walks, but we haven't really done anything outside of school together in a while."
-        "mc" "Hey, would you want to head out with me to the store? We can take a few detours on the way there. I was planning on heading out soon anyway."
-        "s" "Yeah! I'll be ready in a bit! You can come over whenever!!"
-        "mc" "Great! See you in a few."
-        "s" "See ya!! :D"
-    phone discussion end
-    return
- '''
-
- label break_up_text:
-    phone discussion "ddu":
-        "mc" "what do you mean?"
-        "e" "Its just been too much. i cant keep doing this with you. I need a break"
-        "mc" "What did I do wrong. tell me. we can work this out"
-        "e" "We cant. im sorry we couldnt make this work"

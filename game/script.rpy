@@ -40,8 +40,6 @@ label start:
     $ st3_name = "Student 3"
     $ c_name = "Cashier"
     $ mcs_name = "[player] and Sayori"
-    $ phone_mc = [player]
-    $ phone_s = "Sayori"
     $ dokis_name = "Dokis"
     #Phone definitions
     #default pc_sayori = phone.character.Character("Sayori", phone.asset("sayori_icon.png"), "s", 21, "#22Abf8")

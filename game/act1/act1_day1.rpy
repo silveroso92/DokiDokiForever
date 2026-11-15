@@ -17,7 +17,6 @@
     "After a while I turn towards it to turn off the alarm, revealing my home screen with the latest notification."
     call break_up_text
     #[a phone screen image that's interactable. Contents will be discussed]
-    "Elsea..."
     "Two years of my life. Gone like that."
     "Knowing the cesspool of gossip at my school is, chances are everyone will know by first period."
     "I do NOT want to deal with that."
