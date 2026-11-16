@@ -92,7 +92,7 @@ label act1_day4:
     "Yuri smiles at my response."
     "That smile is short-lived as we both hear something quick incoming..."
     show yuri turned sup at t22
-    show sayori happ ce om turned at player_perspecive
+    show sayori happ ce om turned at player_perspective
     s "[player]!!!!!!"
     show sayori cm
     "The next thing I know I'm caught in Sayori's vice grip."
@@ -132,7 +132,7 @@ label act1_day4:
     show yuri cm at t22
     "I sit there in shock as my face softens up towards Sayori."
     "Even after all this time, she still thinks of the good in me."
-    show sayori ce with sink
+    show sayori ce at sink
     "I reach out and put my hand on her head."
     show sayori om
     s "Hey! What are you doing?"
@@ -188,14 +188,15 @@ label act1_day4:
     show natsuki cm at t41
     mc "Wait, I'm getting blamed for this too?"
     show yuri turned at t44
-    show sayori turned om at f43
+    hide sayori 
+    show sayori turned om at f43 with moveinright
     s "That's not fair, Natsuki."
     show sayori cm at t43
     show natsuki om at f41
     n "Neither is going through my stuff to steal food!"
     show natsuki
     n "Food that you were already going to be getting, I might add."
-    show sayori sad om with sink
+    show sayori sad om at sink
     s "I'm sorry, Natsuki. I guess I got a bit too excited for things and got carried away."
     show sayori at f43
     s "But I couldn't help it!"
@@ -206,7 +207,7 @@ label act1_day4:
     show sayori happ ce at t41 zorder 1
     show natsuki at t41 zorder 2
     s "And you know I can't resist cute~"
-    show natsuki om with n_cg2_wiggle_loop
+    show natsuki om at n_cg2_wiggle_loop
     n "H-Hey!"
     show sayori turned at t31
     show natsuki 
@@ -469,10 +470,10 @@ label act1_day4:
     show monika forward at t11
     "As I turn around expecting an angry Natsuki, I am instead in front of Monika."
     mc "Oh! Sorry,  I thought you were-"
-    show monika at t21
-    show natsuki cross at t22
-    n "Pfft. Like I would even touch you!"
-    hide natsuki
+    show monika at t22 zorder 1
+    show natsuki cross at t21 with moveinleft
+    n "Pfft. Like I would even touch you!{nw=2}"
+    hide natsuki with moveoutright
     show monika at t11
     "Natsuki retorts without looking back at me."
     "I can't tell how angry she is."

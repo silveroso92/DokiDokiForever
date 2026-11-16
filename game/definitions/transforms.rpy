@@ -581,11 +581,20 @@ transform jitter:
 
 # 1. Define the custom ATL transformation
 transform fall:
+    
+    #linear 0.1 xoffset -3 yoffset 1
+    # pause 0.1
+
     parallel:
         # Move the sprite's y-position down off the screen
-        easeout 0.3 ypos 2.5 xpos 2
+        easeout 0.5 ypos 2.5 xpos -10
     pause 0.1          # Animate over 0.3 seconds
     parallel:
         # Rotate from its current angle to 90 degrees
-        easeout 0.3 rotate -125
+        easeout 0.2 rotate -150
+
+transform foot_tap:
+    dip
+    pause 0.5
+    repeat
 

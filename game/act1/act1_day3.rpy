@@ -424,7 +424,7 @@ label act1_day3:
     "Sayori decides to break the tension."
     show sayori nerv om oe at f22
     s "S..so, what were you busy with [player]?"
-    show sayori cm at t23
+    show sayori cm at t22
     mc "Huh? Oh!"
     mc "To be honest, I was looking for you to see if you wanted to walk home together."
     show monika ysur oe cm 
@@ -480,7 +480,7 @@ label act1_day3:
     show sayori turned neut rup lup n3 ma e4b
     mc "Now that you mention it, I can see that. "
     mc "And thinking back on it, she was always writing stories. So an interest in literature is right up her alley."
-    show sayori laugh n3 om oe
+    show sayori laug n3 om oe
     s "Aww, you guys..."
     show monika ldown rdown happ om oe
     show sayori turned rdown ldown happ cm oe
@@ -538,7 +538,7 @@ label act1_day3:
     mc "So...is everyone else late as well."
     show sayori turned curr om oe at t11
     s "Huh?"
-    show sayori happ cm ce rup
+    show sayori turnedhapp cm ce rup
     "We seemed to get the attention of the girl as she peeks up from her book towards us."
     show sayori at t41
     show yuri turned neut b1f e1d mj at t44
@@ -1048,7 +1048,7 @@ label act1_day3:
     mc "No, not at all. I was just taking a look at what you were reading."
     mc "Also, I didn't want to spook you or creep you out."
     mc "But now that I think about it, just standing over you wasn't the best choice to avoid being creepy."
-    show youri worr om ce
+    show yuri worr om ce
     "Yuri sighs and shakes her head with a concerned look on her face."
     show yuri oe
     y "Oh, it is not an issue. Your apprehension is understandable after witnessing your uh..."
