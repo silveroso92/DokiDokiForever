@@ -213,28 +213,34 @@ label act1_day4:
     show natsuki 
     n "I'M NOT CUTE DAMMIT!!"
     
-    show sayori turned at t32
+    show sayori turned at t42
     n "You're lucky you're my friend, Sayori."
+    show monika forward at t44 with moveinright
     m "Sayori, we've talked about this..."
-    "Monika approaches from behind."
     show yuri turned at t44
-    show sayori turned at t43
+    show sayori tap at f43
     show natsuki turned at t42
     show monika forward at t41
     s "Eh heh..I know. I'll bring it back"
+    show sayori cm at t43
     mc "Those cupcakes must pack a punch. Chances are you're gonna have a sugar crash when you get home."
-    "Sayori starts to pout. (Might delete this line and just show her sprite pouting. I like the aspect of showing not telling, but this could be a good placeholder)"
+    show sayori pout om at f43
     s "Geez, DAD!"
+    show sayori cm at t43
     n "Well if [player] is your dad, I take it Monika's mom."
+    
     "Me, Monika and Sayori's faces become red."
-    "Monika tries to barrel past the situation."
+    "Almost like she can sense the awkwardmess,Monika tries to barrel past the situation."
+    show Monika at f41
     m "Uh, Okay! Natsuki, do you mind getting the cupcakes since we are all here?"
     m "They are in celebration of our club being official after all."
+    show monika cm at t41
+    show natsuki om at f42
     n "Sure thing!"
-    hide natsuki
-    "She goes back to the closet, but then stops to turn around abruptly."
+    hide natsuki cm with moveoutleft
+    show natsuki turned at peak_left
     n "And everyone take note:"
-    n "Sayori does NOT get anymore until everyone else has."
+    n "Sayori does NOT get any! She's already had hers!"
     s "Meanie!"
     y "If anyone else is in the mood, I can prepare some tea for us."
     m "That sounds lovely, Yuri. Thank you!"
