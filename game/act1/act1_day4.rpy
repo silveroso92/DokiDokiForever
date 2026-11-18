@@ -209,26 +209,28 @@ label act1_day4:
     s "And you know I can't resist cute~"
     show natsuki om at n_cg2_wiggle_loop
     n "H-Hey!"
-    show sayori turned at t31
-    show natsuki 
+    show sayori happ turned cm at t31
+    show natsuki om ce at f41
     n "I'M NOT CUTE DAMMIT!!"
-    
+    show natsuki oe 
     show sayori turned at t42
     n "You're lucky you're my friend, Sayori."
-    show monika forward at t44 with moveinright
+    show natsuki cm at t41
+    show monika forward om at t44 with moveinright
     m "Sayori, we've talked about this..."
     show yuri turned at t44
     show sayori tap at f43
     show natsuki turned at t42
-    show monika forward at t41
+    show monika forward cm at t41
     s "Eh heh..I know. I'll bring it back"
     show sayori cm at t43
     mc "Those cupcakes must pack a punch. Chances are you're gonna have a sugar crash when you get home."
     show sayori pout om at f43
     s "Geez, DAD!"
     show sayori cm at t43
+    show natsuki om at f41
     n "Well if [player] is your dad, I take it Monika's mom."
-    
+    show natsuki cm at t41
     "Me, Monika and Sayori's faces become red."
     "Almost like she can sense the awkwardmess,Monika tries to barrel past the situation."
     show Monika at f41
@@ -238,15 +240,27 @@ label act1_day4:
     show natsuki om at f42
     n "Sure thing!"
     hide natsuki cm with moveoutleft
-    show natsuki turned at peak_left
+    pause 2.0
+    show natsuki turned om at peak_left
     n "And everyone take note:"
     n "Sayori does NOT get any! She's already had hers!"
+    hide natsuki with moveoutleft
+    show sayori om at f43
     s "Meanie!"
+    show sayori cm at t43
+    show yuri om at f44
     y "If anyone else is in the mood, I can prepare some tea for us."
+    show yuri cm at t44
+    show monika om at f41
     m "That sounds lovely, Yuri. Thank you!"
+    show monika cm at t41
+    show yuri happ ce cm at t44
+    pause 1.0
     hide yuri
     "Yuri smiles and retreats to the closet as well."
+    show sayori om rup at f42
     s "I'll go get some napkins from the bathroom for us all."
+    show monika om at f41
     m "Good idea Sayori."
     hide sayori
     show monika forward at t11
